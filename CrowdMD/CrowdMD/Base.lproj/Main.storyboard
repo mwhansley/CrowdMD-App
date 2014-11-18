@@ -64,7 +64,7 @@
                                     <outlet property="descriptionLabel" destination="qMh-hT-khn" id="xbT-fw-3YO"/>
                                     <outlet property="nameLabel" destination="trr-gS-XW7" id="8eB-FZ-3DY"/>
                                     <outlet property="pictureView" destination="vVR-p9-6cD" id="GK3-8v-Wha"/>
-                                    <segue destination="I3p-dH-bbg" kind="push" id="su0-fs-5SY"/>
+                                    <segue destination="I3p-dH-bbg" kind="push" identifier="showInjuryDetail" id="su0-fs-5SY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -181,27 +181,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="82" id="Ha7-FH-olo">
+                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="82" id="Ha7-FH-olo" customClass="MyTreatmentTableCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ha7-FH-olo" id="whv-Ec-JN2">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tennis Elbow - Cortisone " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywH-Nr-fdS">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="1" text="Injury" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywH-Nr-fdS">
                                             <rect key="frame" x="28" y="8" width="289" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Treatment Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjG-j6-YXy">
-                                            <rect key="frame" x="90" y="29" width="406" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Treatment " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjG-j6-YXy">
+                                            <rect key="frame" x="28" y="37" width="406" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oS6-JA-4FU">
+                                            <rect key="frame" x="442" y="0.0" width="120" height="81"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="4Kf-yT-K8T" kind="push" id="rAs-v6-r0i"/>
+                                    <outlet property="injuryLabel" destination="ywH-Nr-fdS" id="G9E-Yq-I1Y"/>
+                                    <outlet property="pictureView" destination="oS6-JA-4FU" id="vrH-dl-ATj"/>
+                                    <outlet property="treatmentLabel" destination="VjG-j6-YXy" id="SC3-rf-uIh"/>
+                                    <segue destination="4Kf-yT-K8T" kind="push" identifier="showMyTreatmentDetail" id="rAs-v6-r0i"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -214,12 +220,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHT-LW-FHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="1110"/>
+            <point key="canvasLocation" x="416" y="1106"/>
         </scene>
-        <!--View Controller-->
+        <!--My Treatment Detail View Controller-->
         <scene sceneID="Id4-7P-qcR">
             <objects>
-                <viewController id="4Kf-yT-K8T" sceneMemberID="viewController">
+                <viewController id="4Kf-yT-K8T" customClass="MyTreatmentDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8IP-Q5-vb7"/>
                         <viewControllerLayoutGuide type="bottom" id="WNj-kO-4qp"/>
@@ -227,9 +233,40 @@
                     <view key="view" contentMode="scaleToFill" id="TWn-ep-9ir">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Injury Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-n9-9wU">
+                                <rect key="frame" x="24" y="56" width="227" height="91"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Treatment Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPg-jq-zqC">
+                                <rect key="frame" x="24" y="126" width="166" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You said you would try this on " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9J-Aa-FOp">
+                                <rect key="frame" x="24" y="155" width="287" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How well did this work for you?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4N-hw-eZB">
+                                <rect key="frame" x="172" y="342" width="343" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="CSf-SA-UFe"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="G9J-Aa-FOp" id="8C0-NG-Gz8"/>
+                        <outlet property="injuryLabel" destination="PAY-n9-9wU" id="hha-t2-lfa"/>
+                        <outlet property="treatmentLabel" destination="QPg-jq-zqC" id="iO9-Yk-RgZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg4-t4-ocl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

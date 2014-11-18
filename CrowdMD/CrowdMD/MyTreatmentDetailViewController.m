@@ -9,14 +9,21 @@
 #import "MyTreatmentDetailViewController.h"
 
 @interface MyTreatmentDetailViewController ()
-
+@property (nonatomic, strong) IBOutlet UILabel* injuryLabel;
+@property (nonatomic, strong) IBOutlet UILabel* treatmentLabel;
+@property (nonatomic, strong) IBOutlet UILabel* dateLabel;
+@property (nonatomic,strong) IBOutlet UIImageView* pictureView;
 @end
 
 @implementation MyTreatmentDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.injuryLabel.text = self.myTreatment.injury;
+    self.treatmentLabel.text = self.myTreatment.treatment;
+    self.dateLabel.text = @"You said you would try this on";
+    self.pictureView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.pictureView setImage:self.myTreatment.picture];
 }
 
 - (void)didReceiveMemoryWarning {

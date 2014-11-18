@@ -24,8 +24,8 @@
     [super viewDidLoad];
     
     MyTreatment * treatmentOne;
-    treatmentOne.name = @"Cortisone";
-    treatmentOne.injuryName = @"Tennis Elbow";
+    treatmentOne.treatment = @"Cortisone";
+    treatmentOne.injury = @"Tennis Elbow";
     
     treatments = [NSArray arrayWithObjects:treatmentOne, nil];
     
@@ -51,20 +51,32 @@
     treatment = [treatments objectAtIndex:indexPath.row];
 
     
-    UILabel *nameLabel = (UILabel *)[cell viewWithTag:1];
-    nameLabel.text = treatment.name;
+    UILabel *injuryLabel = (UILabel *)[cell viewWithTag:1];
+    injuryLabel.text = treatment.injury;
     
-//    UILabel *nameLabel = (UILabel *)[cell viewWithTag:1];
-//    nameLabel.text = treatment.name;
-  //  UILabel *desciption = (UILabel *)[cell viewWithTag:2];
-  //  desciption.text = treatment.longDescription;
+     UILabel *treatmentLabel = (UILabel *)[cell viewWithTag:1];
+     treatmentLabel.text = treatment.treatment;
+
     
-    UIImageView* pictureView = (UIImageView *)[cell viewWithTag:3];
-    pictureView.image = treatment.picture;
+//    UIImageView* pictureView = (UIImageView *)[cell viewWithTag:3];
+//    pictureView.image = treatment.picture;
     
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showMyTreatmentDetail"]) {
+        NSIndexPath *indexPath = nil;
+        MyTreatment *treatment = nil;
+        
+        indexPath = [self.tableView indexPathForSelectedRow];
+        treatment = [treatments objectAtIndex:indexPath.row];
+        
+        
+        MyTreatmentDetailViewController *destViewController = segue.destinationViewController;
+        destViewController.myTreatment = treatment;
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

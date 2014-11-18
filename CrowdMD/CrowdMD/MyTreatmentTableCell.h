@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyTreatment.h"
 
 @interface MyTreatmentTableCell : UITableViewCell
-
+@property (nonatomic,strong) MyTreatment* myTreatment;
 @end

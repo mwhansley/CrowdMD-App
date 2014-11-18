@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyTreatment.h"
 
 @interface MyTreatmentDetailViewController : UIViewController
-
+@property (nonatomic,strong) MyTreatment* myTreatment;
 @end
