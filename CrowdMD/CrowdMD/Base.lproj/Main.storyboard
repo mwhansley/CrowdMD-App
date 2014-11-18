@@ -38,7 +38,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="100" id="e0u-lr-ywe" customClass="TableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="100" id="e0u-lr-ywe" customClass="InjuryTableCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e0u-lr-ywe" id="dAA-YT-xwA">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -61,6 +61,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="descriptionLabel" destination="qMh-hT-khn" id="xbT-fw-3YO"/>
+                                    <outlet property="nameLabel" destination="trr-gS-XW7" id="8eB-FZ-3DY"/>
+                                    <outlet property="pictureView" destination="vVR-p9-6cD" id="GK3-8v-Wha"/>
                                     <segue destination="I3p-dH-bbg" kind="push" id="su0-fs-5SY"/>
                                 </connections>
                             </tableViewCell>
@@ -121,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="1457" y="145"/>
         </scene>
-        <!--View Controller-->
+        <!--Injury Detail View Controller-->
         <scene sceneID="yXC-5M-kh2">
             <objects>
-                <viewController id="I3p-dH-bbg" sceneMemberID="viewController">
+                <viewController id="I3p-dH-bbg" customClass="InjuryDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hRv-L7-b1P"/>
                         <viewControllerLayoutGuide type="bottom" id="mgi-ab-Ngd"/>
@@ -139,41 +142,98 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zjL-g6-49f">
+                                <rect key="frame" x="239" y="110" width="123" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jklhkjhkjlhkllhhhjkhjkjhkhhjkhjkhjkhjk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVA-Jd-Bjg">
+                                <rect key="frame" x="81" y="146" width="281" height="420"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tu6-nw-lhF">
+                                <rect key="frame" x="386" y="180" width="198" height="156"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="m8I-EA-ZC9"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="KVA-Jd-Bjg" id="C5f-Eb-YPT"/>
+                        <outlet property="nameLabel" destination="zFM-8G-BPo" id="abT-6j-ayF"/>
+                        <outlet property="pictureView" destination="Tu6-nw-lhF" id="DCz-a3-JhV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qd3-zu-Kh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2248" y="-534"/>
         </scene>
-        <!--Root View Controller-->
+        <!--My Treatments-->
         <scene sceneID="PVi-FO-Qph">
             <objects>
-                <tableViewController id="gsA-gj-r9Q" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0Mn-ds-i6i">
+                <tableViewController id="gsA-gj-r9Q" customClass="TreatmentsTableController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" id="0Mn-ds-i6i">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ha7-FH-olo">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="82" id="Ha7-FH-olo">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ha7-FH-olo" id="whv-Ec-JN2">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tennis Elbow - Cortisone " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywH-Nr-fdS">
+                                            <rect key="frame" x="28" y="8" width="289" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Treatment Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjG-j6-YXy">
+                                            <rect key="frame" x="90" y="29" width="406" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="4Kf-yT-K8T" kind="push" id="rAs-v6-r0i"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="gsA-gj-r9Q" id="OyF-c8-vKe"/>
+                            <outlet property="dataSource" destination="gsA-gj-r9Q" id="tpr-tN-NTI"/>
                             <outlet property="delegate" destination="gsA-gj-r9Q" id="JOc-eL-arJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="y6g-lt-JfD"/>
+                    <navigationItem key="navigationItem" title="My Treatments" id="y6g-lt-JfD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHT-LW-FHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104" y="834"/>
+            <point key="canvasLocation" x="416" y="1110"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Id4-7P-qcR">
+            <objects>
+                <viewController id="4Kf-yT-K8T" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8IP-Q5-vb7"/>
+                        <viewControllerLayoutGuide type="bottom" id="WNj-kO-4qp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TWn-ep-9ir">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CSf-SA-UFe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fg4-t4-ocl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="1112"/>
         </scene>
         <!--My Treatments-->
         <scene sceneID="HVg-sd-WcG">
@@ -190,7 +250,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TwJ-n2-x5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-644" y="686"/>
+            <point key="canvasLocation" x="-302" y="854"/>
         </scene>
         <!--Body Search-->
         <scene sceneID="Pb6-2e-6pk">

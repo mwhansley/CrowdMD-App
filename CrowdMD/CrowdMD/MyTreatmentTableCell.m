@@ -1,14 +1,14 @@
 //
-//  TableViewCell.m
+//  MyTreatmentTableCell.m
 //  CrowdMD
 //
-//  Created by Megan Hansley on 11/13/14.
+//  Created by Megan Hansley on 11/17/14.
 //  Copyright (c) 2014 Baris, Chris, and Megan. All rights reserved.
 //
 
-#import "TableViewCell.h"
+#import "MyTreatmentTableCell.h"
 
-@implementation TableViewCell
+@implementation MyTreatmentTableCell
 
 - (void)awakeFromNib {
     // Initialization code

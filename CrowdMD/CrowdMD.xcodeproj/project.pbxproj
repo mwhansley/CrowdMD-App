@@ -15,9 +15,15 @@
 		7229A68A1A15CE4C0027E510 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7229A6891A15CE4C0027E510 /* Images.xcassets */; };
 		7229A68D1A15CE4C0027E510 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7229A68B1A15CE4C0027E510 /* LaunchScreen.xib */; };
 		7229A6991A15CE4D0027E510 /* CrowdMDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6981A15CE4D0027E510 /* CrowdMDTests.m */; };
-		7229A6A41A15D1E50027E510 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6A31A15D1E50027E510 /* TableViewCell.m */; };
-		7229A6A71A15D2700027E510 /* Detail Page ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6A61A15D2700027E510 /* Detail Page ViewController.m */; };
-		7229A6AA1A15D78F0027E510 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6A91A15D78F0027E510 /* TableViewController.m */; };
+		7229A6A41A15D1E50027E510 /* InjuryTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6A31A15D1E50027E510 /* InjuryTableCell.m */; };
+		7229A6AA1A15D78F0027E510 /* InjuryTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6A91A15D78F0027E510 /* InjuryTableController.m */; };
+		725EF9481A1A7B65004BC94D /* Injury.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9471A1A7B65004BC94D /* Injury.m */; };
+		725EF94B1A1A7CA8004BC94D /* InjuryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF94A1A1A7CA8004BC94D /* InjuryDetailViewController.m */; };
+		725EF94E1A1A8943004BC94D /* MyTreatmentsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF94D1A1A8943004BC94D /* MyTreatmentsTableController.m */; };
+		725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9521A1A8AEF004BC94D /* MyTreatmentTableCell.m */; };
+		725EF9561A1A8B76004BC94D /* MyTreatmentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9551A1A8B76004BC94D /* MyTreatmentDetailViewController.m */; };
+		725EF9591A1A953E004BC94D /* Treatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9581A1A953E004BC94D /* Treatment.m */; };
+		725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF95B1A1A96D5004BC94D /* MyTreatment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +52,24 @@
 		7229A6921A15CE4D0027E510 /* CrowdMDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrowdMDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7229A6971A15CE4D0027E510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7229A6981A15CE4D0027E510 /* CrowdMDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrowdMDTests.m; sourceTree = "<group>"; };
-		7229A6A21A15D1E50027E510 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
-		7229A6A31A15D1E50027E510 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		7229A6A51A15D2700027E510 /* Detail Page ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Detail Page ViewController.h"; sourceTree = "<group>"; };
-		7229A6A61A15D2700027E510 /* Detail Page ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Detail Page ViewController.m"; sourceTree = "<group>"; };
-		7229A6A81A15D78E0027E510 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		7229A6A91A15D78F0027E510 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		7229A6A21A15D1E50027E510 /* InjuryTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjuryTableCell.h; sourceTree = "<group>"; };
+		7229A6A31A15D1E50027E510 /* InjuryTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjuryTableCell.m; sourceTree = "<group>"; };
+		7229A6A81A15D78E0027E510 /* InjuryTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjuryTableController.h; sourceTree = "<group>"; };
+		7229A6A91A15D78F0027E510 /* InjuryTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjuryTableController.m; sourceTree = "<group>"; };
+		725EF9461A1A7B65004BC94D /* Injury.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Injury.h; sourceTree = "<group>"; };
+		725EF9471A1A7B65004BC94D /* Injury.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Injury.m; sourceTree = "<group>"; };
+		725EF9491A1A7CA8004BC94D /* InjuryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjuryDetailViewController.h; sourceTree = "<group>"; };
+		725EF94A1A1A7CA8004BC94D /* InjuryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjuryDetailViewController.m; sourceTree = "<group>"; };
+		725EF94C1A1A8943004BC94D /* MyTreatmentTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentTableController.h; sourceTree = "<group>"; };
+		725EF94D1A1A8943004BC94D /* MyTreatmentsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentsTableController.m; sourceTree = "<group>"; };
+		725EF9511A1A8AEF004BC94D /* MyTreatmentTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentTableCell.h; sourceTree = "<group>"; };
+		725EF9521A1A8AEF004BC94D /* MyTreatmentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentTableCell.m; sourceTree = "<group>"; };
+		725EF9541A1A8B76004BC94D /* MyTreatmentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentDetailViewController.h; sourceTree = "<group>"; };
+		725EF9551A1A8B76004BC94D /* MyTreatmentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentDetailViewController.m; sourceTree = "<group>"; };
+		725EF9571A1A953E004BC94D /* Treatment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Treatment.h; sourceTree = "<group>"; };
+		725EF9581A1A953E004BC94D /* Treatment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Treatment.m; sourceTree = "<group>"; };
+		725EF95A1A1A96D5004BC94D /* MyTreatment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatment.h; sourceTree = "<group>"; };
+		725EF95B1A1A96D5004BC94D /* MyTreatment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +111,8 @@
 		7229A6781A15CE4C0027E510 /* CrowdMD */ = {
 			isa = PBXGroup;
 			children = (
+				725EF9501A1A8985004BC94D /* MyTreatments */,
+				725EF94F1A1A8969004BC94D /* Injury */,
 				7229A67D1A15CE4C0027E510 /* AppDelegate.h */,
 				7229A67E1A15CE4C0027E510 /* AppDelegate.m */,
 				7229A6801A15CE4C0027E510 /* FirstViewController.h */,
@@ -100,15 +120,11 @@
 				7229A6831A15CE4C0027E510 /* SecondViewController.h */,
 				7229A6841A15CE4C0027E510 /* SecondViewController.m */,
 				7229A6861A15CE4C0027E510 /* Main.storyboard */,
-				7229A6A81A15D78E0027E510 /* TableViewController.h */,
-				7229A6A91A15D78F0027E510 /* TableViewController.m */,
-				7229A6A21A15D1E50027E510 /* TableViewCell.h */,
-				7229A6A31A15D1E50027E510 /* TableViewCell.m */,
-				7229A6A51A15D2700027E510 /* Detail Page ViewController.h */,
-				7229A6A61A15D2700027E510 /* Detail Page ViewController.m */,
 				7229A6891A15CE4C0027E510 /* Images.xcassets */,
 				7229A68B1A15CE4C0027E510 /* LaunchScreen.xib */,
 				7229A6791A15CE4C0027E510 /* Supporting Files */,
+				725EF9571A1A953E004BC94D /* Treatment.h */,
+				725EF9581A1A953E004BC94D /* Treatment.m */,
 			);
 			path = CrowdMD;
 			sourceTree = "<group>";
@@ -137,6 +153,36 @@
 				7229A6971A15CE4D0027E510 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		725EF94F1A1A8969004BC94D /* Injury */ = {
+			isa = PBXGroup;
+			children = (
+				725EF9491A1A7CA8004BC94D /* InjuryDetailViewController.h */,
+				725EF94A1A1A7CA8004BC94D /* InjuryDetailViewController.m */,
+				7229A6A81A15D78E0027E510 /* InjuryTableController.h */,
+				725EF9461A1A7B65004BC94D /* Injury.h */,
+				725EF9471A1A7B65004BC94D /* Injury.m */,
+				7229A6A91A15D78F0027E510 /* InjuryTableController.m */,
+				7229A6A21A15D1E50027E510 /* InjuryTableCell.h */,
+				7229A6A31A15D1E50027E510 /* InjuryTableCell.m */,
+			);
+			name = Injury;
+			sourceTree = "<group>";
+		};
+		725EF9501A1A8985004BC94D /* MyTreatments */ = {
+			isa = PBXGroup;
+			children = (
+				725EF95A1A1A96D5004BC94D /* MyTreatment.h */,
+				725EF95B1A1A96D5004BC94D /* MyTreatment.m */,
+				725EF94C1A1A8943004BC94D /* MyTreatmentTableController.h */,
+				725EF94D1A1A8943004BC94D /* MyTreatmentsTableController.m */,
+				725EF9511A1A8AEF004BC94D /* MyTreatmentTableCell.h */,
+				725EF9521A1A8AEF004BC94D /* MyTreatmentTableCell.m */,
+				725EF9541A1A8B76004BC94D /* MyTreatmentDetailViewController.h */,
+				725EF9551A1A8B76004BC94D /* MyTreatmentDetailViewController.m */,
+			);
+			name = MyTreatments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,12 +285,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */,
 				7229A6851A15CE4C0027E510 /* SecondViewController.m in Sources */,
+				725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */,
+				725EF94E1A1A8943004BC94D /* MyTreatmentsTableController.m in Sources */,
 				7229A67F1A15CE4C0027E510 /* AppDelegate.m in Sources */,
+				725EF9561A1A8B76004BC94D /* MyTreatmentDetailViewController.m in Sources */,
 				7229A6821A15CE4C0027E510 /* FirstViewController.m in Sources */,
-				7229A6A41A15D1E50027E510 /* TableViewCell.m in Sources */,
-				7229A6A71A15D2700027E510 /* Detail Page ViewController.m in Sources */,
-				7229A6AA1A15D78F0027E510 /* TableViewController.m in Sources */,
+				725EF9591A1A953E004BC94D /* Treatment.m in Sources */,
+				7229A6A41A15D1E50027E510 /* InjuryTableCell.m in Sources */,
+				725EF94B1A1A7CA8004BC94D /* InjuryDetailViewController.m in Sources */,
+				725EF9481A1A7B65004BC94D /* Injury.m in Sources */,
+				7229A6AA1A15D78F0027E510 /* InjuryTableController.m in Sources */,
 				7229A67C1A15CE4C0027E510 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +488,7 @@
 				7229A69E1A15CE4D0027E510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7229A69F1A15CE4D0027E510 /* Build configuration list for PBXNativeTarget "CrowdMDTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +497,7 @@
 				7229A6A11A15CE4D0027E510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

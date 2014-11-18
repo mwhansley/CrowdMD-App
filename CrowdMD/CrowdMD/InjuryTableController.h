@@ -1,5 +1,5 @@
 //
-//  TableViewController.h
+//  InjuryTableController.h
 //  CrowdMD
 //
 //  Created by Megan Hansley on 11/13/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewController : UITableViewController
+@interface InjuryTableController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

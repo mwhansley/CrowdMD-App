@@ -1,28 +1,70 @@
 //
-//  TableViewController.m
+//  MyTreatmentTableController.m
 //  CrowdMD
 //
-//  Created by Megan Hansley on 11/13/14.
+//  Created by Megan Hansley on 11/17/14.
 //  Copyright (c) 2014 Baris, Chris, and Megan. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "MyTreatmentTableController.h"
+#import "MyTreatmentTableCell.h"
+#import "MyTreatmentDetailViewController.h"
+#import "MyTreatment.h"
 
-@interface TableViewController ()
+@interface MyTreatmentTableController ()
 
 @end
 
-@implementation TableViewController
+@implementation MyTreatmentTableController
+{
+    NSArray *treatments;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    MyTreatment * treatmentOne;
+    treatmentOne.name = @"Cortisone";
+    treatmentOne.injuryName = @"Tennis Elbow";
+    
+    treatments = [NSArray arrayWithObjects:treatmentOne, nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"MyTreatmentCell";
+    MyTreatmentTableCell *cell = (MyTreatmentTableCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    // Configure the cell...
+    if (cell == nil) {
+        cell = [[MyTreatmentTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    // Display recipe in the table cell
+    MyTreatment *treatment = nil;
+    treatment = [treatments objectAtIndex:indexPath.row];
+
+    
+    UILabel *nameLabel = (UILabel *)[cell viewWithTag:1];
+    nameLabel.text = treatment.name;
+    
+//    UILabel *nameLabel = (UILabel *)[cell viewWithTag:1];
+//    nameLabel.text = treatment.name;
+  //  UILabel *desciption = (UILabel *)[cell viewWithTag:2];
+  //  desciption.text = treatment.longDescription;
+    
+    UIImageView* pictureView = (UIImageView *)[cell viewWithTag:3];
+    pictureView.image = treatment.picture;
+    
+    return cell;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -32,15 +74,18 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [treatments count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 71;
 }
 
 /*

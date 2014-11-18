@@ -1,5 +1,5 @@
 //
-//  TableViewCell.h
+//  InjuryTableCell.h
 //  CrowdMD
 //
 //  Created by Megan Hansley on 11/13/14.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Injury.h"
 
-@interface TableViewCell : UITableViewCell
-
+@interface InjuryTableCell : UITableViewCell
+@property (nonatomic,strong) Injury* injury;
 @end
