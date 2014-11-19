@@ -19,11 +19,11 @@
 		7229A6AA1A15D78F0027E510 /* InjuryTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6A91A15D78F0027E510 /* InjuryTableController.m */; };
 		725EF9481A1A7B65004BC94D /* Injury.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9471A1A7B65004BC94D /* Injury.m */; };
 		725EF94B1A1A7CA8004BC94D /* InjuryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF94A1A1A7CA8004BC94D /* InjuryDetailViewController.m */; };
-		725EF94E1A1A8943004BC94D /* MyTreatmentsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF94D1A1A8943004BC94D /* MyTreatmentsTableController.m */; };
 		725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9521A1A8AEF004BC94D /* MyTreatmentTableCell.m */; };
 		725EF9561A1A8B76004BC94D /* MyTreatmentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9551A1A8B76004BC94D /* MyTreatmentDetailViewController.m */; };
 		725EF9591A1A953E004BC94D /* Treatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9581A1A953E004BC94D /* Treatment.m */; };
 		725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF95B1A1A96D5004BC94D /* MyTreatment.m */; };
+		72A973831A1C72C0004F61CC /* MyTreatmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,6 @@
 		725EF9471A1A7B65004BC94D /* Injury.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Injury.m; sourceTree = "<group>"; };
 		725EF9491A1A7CA8004BC94D /* InjuryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjuryDetailViewController.h; sourceTree = "<group>"; };
 		725EF94A1A1A7CA8004BC94D /* InjuryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjuryDetailViewController.m; sourceTree = "<group>"; };
-		725EF94C1A1A8943004BC94D /* MyTreatmentTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentTableController.h; sourceTree = "<group>"; };
-		725EF94D1A1A8943004BC94D /* MyTreatmentsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentsTableController.m; sourceTree = "<group>"; };
 		725EF9511A1A8AEF004BC94D /* MyTreatmentTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentTableCell.h; sourceTree = "<group>"; };
 		725EF9521A1A8AEF004BC94D /* MyTreatmentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentTableCell.m; sourceTree = "<group>"; };
 		725EF9541A1A8B76004BC94D /* MyTreatmentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentDetailViewController.h; sourceTree = "<group>"; };
@@ -70,6 +68,8 @@
 		725EF9581A1A953E004BC94D /* Treatment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Treatment.m; sourceTree = "<group>"; };
 		725EF95A1A1A96D5004BC94D /* MyTreatment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatment.h; sourceTree = "<group>"; };
 		725EF95B1A1A96D5004BC94D /* MyTreatment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatment.m; sourceTree = "<group>"; };
+		72A973811A1C72C0004F61CC /* MyTreatmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentViewController.h; sourceTree = "<group>"; };
+		72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,12 +175,12 @@
 			children = (
 				725EF95A1A1A96D5004BC94D /* MyTreatment.h */,
 				725EF95B1A1A96D5004BC94D /* MyTreatment.m */,
-				725EF94C1A1A8943004BC94D /* MyTreatmentTableController.h */,
-				725EF94D1A1A8943004BC94D /* MyTreatmentsTableController.m */,
 				725EF9511A1A8AEF004BC94D /* MyTreatmentTableCell.h */,
 				725EF9521A1A8AEF004BC94D /* MyTreatmentTableCell.m */,
 				725EF9541A1A8B76004BC94D /* MyTreatmentDetailViewController.h */,
 				725EF9551A1A8B76004BC94D /* MyTreatmentDetailViewController.m */,
+				72A973811A1C72C0004F61CC /* MyTreatmentViewController.h */,
+				72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */,
 			);
 			name = MyTreatments;
 			sourceTree = "<group>";
@@ -288,7 +288,6 @@
 				725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */,
 				7229A6851A15CE4C0027E510 /* SecondViewController.m in Sources */,
 				725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */,
-				725EF94E1A1A8943004BC94D /* MyTreatmentsTableController.m in Sources */,
 				7229A67F1A15CE4C0027E510 /* AppDelegate.m in Sources */,
 				725EF9561A1A8B76004BC94D /* MyTreatmentDetailViewController.m in Sources */,
 				7229A6821A15CE4C0027E510 /* FirstViewController.m in Sources */,
@@ -298,6 +297,7 @@
 				725EF9481A1A7B65004BC94D /* Injury.m in Sources */,
 				7229A6AA1A15D78F0027E510 /* InjuryTableController.m in Sources */,
 				7229A67C1A15CE4C0027E510 /* main.m in Sources */,
+				72A973831A1C72C0004F61CC /* MyTreatmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

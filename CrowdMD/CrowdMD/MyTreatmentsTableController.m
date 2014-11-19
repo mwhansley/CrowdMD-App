@@ -23,11 +23,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MyTreatment * treatmentOne;
+    MyTreatment * treatmentOne = [[MyTreatment alloc] init];
     treatmentOne.treatment = @"Cortisone";
     treatmentOne.injury = @"Tennis Elbow";
     
-    treatments = [NSArray arrayWithObjects:treatmentOne, nil];
+    MyTreatment * treatmentTwo = [[MyTreatment alloc] init];
+    treatmentTwo.treatment = @"PT";
+    treatmentTwo.injury = @"Tennis Elbow";
+    
+    treatments = [NSArray arrayWithObjects:treatmentOne, treatmentTwo, nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -36,6 +40,14 @@
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -43,15 +55,17 @@
     MyTreatmentTableCell *cell = (MyTreatmentTableCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
-    if (cell == nil) {
-        cell = [[MyTreatmentTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+//    if (cell == nil) {
+//        cell = [[MyTreatmentTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//    }
     // Display recipe in the table cell
     MyTreatment *treatment = nil;
+   // treatment = [self.fetchedResultsController objectAtIndexPath:indexPath];
     treatment = [treatments objectAtIndex:indexPath.row];
 
     
     UILabel *injuryLabel = (UILabel *)[cell viewWithTag:1];
+    //injuryLabel.text = treatment.injury;
     injuryLabel.text = treatment.injury;
     
      UILabel *treatmentLabel = (UILabel *)[cell viewWithTag:1];
