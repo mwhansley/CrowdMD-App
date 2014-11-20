@@ -24,6 +24,18 @@
 		725EF9591A1A953E004BC94D /* Treatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9581A1A953E004BC94D /* Treatment.m */; };
 		725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF95B1A1A96D5004BC94D /* MyTreatment.m */; };
 		72A973831A1C72C0004F61CC /* MyTreatmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */; };
+		72FFC5C01A1D80D500657B36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5AC1A1D80D500657B36 /* InfoPlist.strings */; };
+		72FFC5C21A1D80D500657B36 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B01A1D80D500657B36 /* LICENSE */; };
+		72FFC5C41A1D80D500657B36 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B21A1D80D500657B36 /* README */; };
+		72FFC5C51A1D80D500657B36 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B31A1D80D500657B36 /* star.png */; };
+		72FFC5C61A1D80D500657B36 /* star.psd in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B41A1D80D500657B36 /* star.psd */; };
+		72FFC5C71A1D80D500657B36 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B51A1D80D500657B36 /* star@2x.png */; };
+		72FFC5C81A1D80D500657B36 /* star_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B61A1D80D500657B36 /* star_highlighted.png */; };
+		72FFC5C91A1D80D500657B36 /* star_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B71A1D80D500657B36 /* star_highlighted@2x.png */; };
+		72FFC5CA1A1D80D500657B36 /* StarRating-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B81A1D80D500657B36 /* StarRating-Info.plist */; };
+		72FFC5CB1A1D80D500657B36 /* StarRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FFC5BB1A1D80D500657B36 /* StarRatingControl.m */; };
+		72FFC5CC1A1D80D500657B36 /* TFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FFC5BD1A1D80D500657B36 /* TFAppDelegate.m */; };
+		72FFC5CD1A1D80D500657B36 /* TFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FFC5BF1A1D80D500657B36 /* TFViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +82,22 @@
 		725EF95B1A1A96D5004BC94D /* MyTreatment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatment.m; sourceTree = "<group>"; };
 		72A973811A1C72C0004F61CC /* MyTreatmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentViewController.h; sourceTree = "<group>"; };
 		72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentViewController.m; sourceTree = "<group>"; };
+		72FFC5AD1A1D80D500657B36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72FFC5B01A1D80D500657B36 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		72FFC5B21A1D80D500657B36 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		72FFC5B31A1D80D500657B36 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		72FFC5B41A1D80D500657B36 /* star.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = star.psd; sourceTree = "<group>"; };
+		72FFC5B51A1D80D500657B36 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		72FFC5B61A1D80D500657B36 /* star_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_highlighted.png; sourceTree = "<group>"; };
+		72FFC5B71A1D80D500657B36 /* star_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star_highlighted@2x.png"; sourceTree = "<group>"; };
+		72FFC5B81A1D80D500657B36 /* StarRating-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "StarRating-Info.plist"; sourceTree = "<group>"; };
+		72FFC5B91A1D80D500657B36 /* StarRating-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StarRating-Prefix.pch"; sourceTree = "<group>"; };
+		72FFC5BA1A1D80D500657B36 /* StarRatingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarRatingControl.h; sourceTree = "<group>"; };
+		72FFC5BB1A1D80D500657B36 /* StarRatingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarRatingControl.m; sourceTree = "<group>"; };
+		72FFC5BC1A1D80D500657B36 /* TFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFAppDelegate.h; sourceTree = "<group>"; };
+		72FFC5BD1A1D80D500657B36 /* TFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFAppDelegate.m; sourceTree = "<group>"; };
+		72FFC5BE1A1D80D500657B36 /* TFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFViewController.h; sourceTree = "<group>"; };
+		72FFC5BF1A1D80D500657B36 /* TFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +139,7 @@
 		7229A6781A15CE4C0027E510 /* CrowdMD */ = {
 			isa = PBXGroup;
 			children = (
+				72FFC5AB1A1D80D500657B36 /* StarRating */,
 				725EF9501A1A8985004BC94D /* MyTreatments */,
 				725EF94F1A1A8969004BC94D /* Injury */,
 				7229A67D1A15CE4C0027E510 /* AppDelegate.h */,
@@ -183,6 +212,29 @@
 				72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */,
 			);
 			name = MyTreatments;
+			sourceTree = "<group>";
+		};
+		72FFC5AB1A1D80D500657B36 /* StarRating */ = {
+			isa = PBXGroup;
+			children = (
+				72FFC5AC1A1D80D500657B36 /* InfoPlist.strings */,
+				72FFC5B01A1D80D500657B36 /* LICENSE */,
+				72FFC5B31A1D80D500657B36 /* star.png */,
+				72FFC5BA1A1D80D500657B36 /* StarRatingControl.h */,
+				72FFC5B21A1D80D500657B36 /* README */,
+				72FFC5BB1A1D80D500657B36 /* StarRatingControl.m */,
+				72FFC5B41A1D80D500657B36 /* star.psd */,
+				72FFC5B51A1D80D500657B36 /* star@2x.png */,
+				72FFC5B61A1D80D500657B36 /* star_highlighted.png */,
+				72FFC5B71A1D80D500657B36 /* star_highlighted@2x.png */,
+				72FFC5B81A1D80D500657B36 /* StarRating-Info.plist */,
+				72FFC5B91A1D80D500657B36 /* StarRating-Prefix.pch */,
+				72FFC5BC1A1D80D500657B36 /* TFAppDelegate.h */,
+				72FFC5BD1A1D80D500657B36 /* TFAppDelegate.m */,
+				72FFC5BE1A1D80D500657B36 /* TFViewController.h */,
+				72FFC5BF1A1D80D500657B36 /* TFViewController.m */,
+			);
+			path = StarRating;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +317,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FFC5CA1A1D80D500657B36 /* StarRating-Info.plist in Resources */,
+				72FFC5C21A1D80D500657B36 /* LICENSE in Resources */,
 				7229A6881A15CE4C0027E510 /* Main.storyboard in Resources */,
+				72FFC5C01A1D80D500657B36 /* InfoPlist.strings in Resources */,
+				72FFC5C61A1D80D500657B36 /* star.psd in Resources */,
 				7229A68D1A15CE4C0027E510 /* LaunchScreen.xib in Resources */,
+				72FFC5C71A1D80D500657B36 /* star@2x.png in Resources */,
+				72FFC5C81A1D80D500657B36 /* star_highlighted.png in Resources */,
+				72FFC5C51A1D80D500657B36 /* star.png in Resources */,
 				7229A68A1A15CE4C0027E510 /* Images.xcassets in Resources */,
+				72FFC5C91A1D80D500657B36 /* star_highlighted@2x.png in Resources */,
+				72FFC5C41A1D80D500657B36 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FFC5CC1A1D80D500657B36 /* TFAppDelegate.m in Sources */,
 				725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */,
+				72FFC5CD1A1D80D500657B36 /* TFViewController.m in Sources */,
 				7229A6851A15CE4C0027E510 /* SecondViewController.m in Sources */,
 				725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */,
+				72FFC5CB1A1D80D500657B36 /* StarRatingControl.m in Sources */,
 				7229A67F1A15CE4C0027E510 /* AppDelegate.m in Sources */,
 				725EF9561A1A8B76004BC94D /* MyTreatmentDetailViewController.m in Sources */,
 				7229A6821A15CE4C0027E510 /* FirstViewController.m in Sources */,
@@ -334,6 +398,14 @@
 				7229A68C1A15CE4C0027E510 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		72FFC5AC1A1D80D500657B36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72FFC5AD1A1D80D500657B36 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -77,6 +77,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)starRatingControl:(StarRatingControl *)control didUpdateRating:(NSUInteger)rating {
+  //  _ratingLabel.text = [_ratingLabels objectAtIndex:rating];
+}
+
+- (void)starRatingControl:(StarRatingControl *)control willUpdateRating:(NSUInteger)rating {
+   // _ratingLabel.text = [_ratingLabels objectAtIndex:rating];
+}
+
 /*
 #pragma mark - Navigation
 
