@@ -133,35 +133,36 @@
                         <viewControllerLayoutGuide type="bottom" id="mgi-ab-Ngd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0wn-dc-udj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tennis Elbow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFM-8G-BPo">
-                                <rect key="frame" x="251" y="72" width="165" height="21"/>
+                                <rect key="frame" x="81" y="72" width="165" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zjL-g6-49f">
-                                <rect key="frame" x="239" y="110" width="123" height="29"/>
+                                <rect key="frame" x="96" y="115" width="123" height="29"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jklhkjhkjlhkllhhhjkhjkjhkhhjkhjkhjkhjk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVA-Jd-Bjg">
-                                <rect key="frame" x="81" y="146" width="281" height="420"/>
+                                <rect key="frame" x="73" y="295" width="223" height="224"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tu6-nw-lhF">
-                                <rect key="frame" x="386" y="180" width="198" height="156"/>
+                                <rect key="frame" x="201" y="159" width="95" height="103"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="m8I-EA-ZC9"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="KVA-Jd-Bjg" id="C5f-Eb-YPT"/>
                         <outlet property="nameLabel" destination="zFM-8G-BPo" id="abT-6j-ayF"/>
@@ -170,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qd3-zu-Kh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2576" y="-126"/>
+            <point key="canvasLocation" x="2407" y="-152"/>
         </scene>
         <!--My Treatments-->
         <scene sceneID="xMT-6I-YFw">
@@ -210,7 +211,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3F5-6g-W1o">
-                                                            <rect key="frame" x="443" y="4" width="96" height="66"/>
+                                                            <rect key="frame" x="170" y="6" width="96" height="66"/>
                                                         </imageView>
                                                     </subviews>
                                                 </tableViewCellContentView>
@@ -240,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRV-dN-SEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="791" y="-1391"/>
+            <point key="canvasLocation" x="785" y="-1453"/>
         </scene>
         <!--Title-->
         <scene sceneID="Id4-7P-qcR">
@@ -319,6 +320,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg4-t4-ocl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1716" y="-1391"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AeM-8R-n3J">
+            <objects>
+                <viewController id="ADY-xn-Xjh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Yo-b7-sjD"/>
+                        <viewControllerLayoutGuide type="bottom" id="2kh-Ra-BlC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vVV-Oi-ZcV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eif-61-kAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2218" y="-1367"/>
         </scene>
         <!--My Treatments-->
         <scene sceneID="HVg-sd-WcG">
