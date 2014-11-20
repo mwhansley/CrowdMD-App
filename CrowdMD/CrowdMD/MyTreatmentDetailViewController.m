@@ -13,9 +13,14 @@
 @property (nonatomic, strong) IBOutlet UILabel* treatmentLabel;
 @property (nonatomic, strong) IBOutlet UILabel* dateLabel;
 @property (nonatomic,strong) IBOutlet UIImageView* pictureView;
+@property (strong) NSArray*ratingLabels;
 @end
 
 @implementation MyTreatmentDetailViewController
+
+@synthesize ratingLabel = _ratingLabel;
+@synthesize ratingLabels = _ratingLabels;
+@synthesize starRatingControl = _starRatingControl;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,11 +29,21 @@
     self.dateLabel.text = @"You said you would try this on";
     self.pictureView.contentMode = UIViewContentModeScaleAspectFit;
     [self.pictureView setImage:self.myTreatment.picture];
+    _ratingLabels = [NSArray arrayWithObjects:@"Unrated", @"Hate it", @"Don't like it", @"It's OK", @"It's good", @"It's great", nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)starRatingControl:(StarRatingControl *)control didUpdateRating:(NSUInteger)rating {
+    _ratingLabel.text = [_ratingLabels objectAtIndex:rating];
+}
+
+- (void)starRatingControl:(StarRatingControl *)control willUpdateRating:(NSUInteger)rating {
+    _ratingLabel.text = [_ratingLabels objectAtIndex:rating];
 }
 
 /*

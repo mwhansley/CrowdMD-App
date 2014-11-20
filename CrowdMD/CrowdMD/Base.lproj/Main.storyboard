@@ -273,19 +273,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How well did this work for you?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4N-hw-eZB">
-                                <rect key="frame" x="38" y="331" width="343" height="22"/>
+                                <rect key="frame" x="33" y="231" width="343" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjd-vu-8hD">
-                                <rect key="frame" x="99" y="375" width="76" height="30"/>
+                                <rect key="frame" x="99" y="399" width="76" height="30"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fR7-jY-fsY" customClass="StarRatingControl">
-                                <rect key="frame" x="32" y="231" width="237" height="67"/>
+                                <rect key="frame" x="33" y="266" width="237" height="67"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="delegate" destination="4Kf-yT-K8T" id="kgh-f7-4aH"/>
@@ -297,6 +297,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unrated" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkq-y8-JCZ">
+                                <rect key="frame" x="106" y="363" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -304,12 +310,13 @@
                     <connections>
                         <outlet property="dateLabel" destination="G9J-Aa-FOp" id="8C0-NG-Gz8"/>
                         <outlet property="injuryLabel" destination="PAY-n9-9wU" id="hha-t2-lfa"/>
+                        <outlet property="ratingLabel" destination="qkq-y8-JCZ" id="Oug-B2-b83"/>
                         <outlet property="treatmentLabel" destination="QPg-jq-zqC" id="iO9-Yk-RgZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg4-t4-ocl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1790" y="-1391"/>
+            <point key="canvasLocation" x="1808" y="-1391"/>
         </scene>
         <!--My Treatments-->
         <scene sceneID="HVg-sd-WcG">
