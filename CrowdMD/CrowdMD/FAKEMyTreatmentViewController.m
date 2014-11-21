@@ -8,8 +8,9 @@
 
 #import "FAKEMyTreatmentViewController.h"
 #import "MyTreatment.h"
-#import "MyTreatmentDetailViewController.h"
 #import "MyTreatmentTableCell.h"
+#import "MyTreatmentDetailViewController.h"
+#import "FAKEMyTreatmentTableViewCell.h"
 #import "MyTreatmentInfoViewController.h"
 
 @interface FAKEMyTreatmentViewController ()  <UITableViewDataSource, UITableViewDelegate>
@@ -33,8 +34,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"MyTreatmentCell";
-    MyTreatmentTableCell *cell = (MyTreatmentTableCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"FAKEMyTreatmentCell";
+    FAKEMyTreatmentTableViewCell *cell = (FAKEMyTreatmentTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     MyTreatment *treatment = nil;
     treatment = [self.treatments objectAtIndex:indexPath.row];

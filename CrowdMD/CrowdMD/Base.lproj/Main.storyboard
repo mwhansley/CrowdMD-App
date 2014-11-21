@@ -621,7 +621,7 @@
                                 <rect key="frame" x="0.0" y="235" width="320" height="284"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationLevel="-4" indentationWidth="10" reuseIdentifier="MyTreatmentCell" rowHeight="73" id="zt3-Dv-CgS" customClass="MyTreatmentTableCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationLevel="-4" indentationWidth="10" reuseIdentifier="FAKEMyTreatmentCell" rowHeight="73" id="zt3-Dv-CgS" customClass="FAKEMyTreatmentTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="566" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zt3-Dv-CgS" id="Dm5-ez-yFw">
@@ -652,6 +652,7 @@
                                             <outlet property="pictureView" destination="Lf3-Cq-izn" id="SZN-66-BB9"/>
                                             <outlet property="stars" destination="Zce-1x-p0L" id="QdB-qm-7ef"/>
                                             <outlet property="treatmentLabel" destination="EVl-2m-hju" id="gvg-eL-dRz"/>
+                                            <segue destination="ADY-xn-Xjh" kind="push" id="0Ha-a4-f9A"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -733,4 +734,7 @@
         <image name="icon_7969 copy" width="25" height="25"/>
         <image name="icon_8204 copy-1" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0Ha-a4-f9A"/>
+    </inferredMetricsTieBreakers>
 </document>

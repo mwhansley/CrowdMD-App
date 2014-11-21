@@ -28,6 +28,7 @@
 		725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF95B1A1A96D5004BC94D /* MyTreatment.m */; };
 		729502F01A1F3E40008A8A8B /* MyTreatmentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729502EF1A1F3E40008A8A8B /* MyTreatmentInfoViewController.m */; };
 		72A973831A1C72C0004F61CC /* MyTreatmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */; };
+		72B33EEA1A1F60C20037D8D4 /* FAKEMyTreatmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B33EE91A1F60C20037D8D4 /* FAKEMyTreatmentTableViewCell.m */; };
 		72FFC5C01A1D80D500657B36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5AC1A1D80D500657B36 /* InfoPlist.strings */; };
 		72FFC5C21A1D80D500657B36 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B01A1D80D500657B36 /* LICENSE */; };
 		72FFC5C41A1D80D500657B36 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B21A1D80D500657B36 /* README */; };
@@ -98,6 +99,8 @@
 		729502EF1A1F3E40008A8A8B /* MyTreatmentInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentInfoViewController.m; sourceTree = "<group>"; };
 		72A973811A1C72C0004F61CC /* MyTreatmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentViewController.h; sourceTree = "<group>"; };
 		72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentViewController.m; sourceTree = "<group>"; };
+		72B33EE81A1F60C20037D8D4 /* FAKEMyTreatmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAKEMyTreatmentTableViewCell.h; sourceTree = "<group>"; };
+		72B33EE91A1F60C20037D8D4 /* FAKEMyTreatmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAKEMyTreatmentTableViewCell.m; sourceTree = "<group>"; };
 		72FFC5AD1A1D80D500657B36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		72FFC5B01A1D80D500657B36 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		72FFC5B21A1D80D500657B36 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 				729502EF1A1F3E40008A8A8B /* MyTreatmentInfoViewController.m */,
 				72084B7A1A1F5BE300D9E37E /* FAKEMyTreatmentViewController.h */,
 				72084B7B1A1F5BE300D9E37E /* FAKEMyTreatmentViewController.m */,
+				72B33EE81A1F60C20037D8D4 /* FAKEMyTreatmentTableViewCell.h */,
+				72B33EE91A1F60C20037D8D4 /* FAKEMyTreatmentTableViewCell.m */,
 			);
 			name = MyTreatments;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 				725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */,
 				72FFC5CD1A1D80D500657B36 /* TFViewController.m in Sources */,
 				7229A6851A15CE4C0027E510 /* SecondViewController.m in Sources */,
+				72B33EEA1A1F60C20037D8D4 /* FAKEMyTreatmentTableViewCell.m in Sources */,
 				725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */,
 				72FFC5CB1A1D80D500657B36 /* StarRatingControl.m in Sources */,
 				729502F01A1F3E40008A8A8B /* MyTreatmentInfoViewController.m in Sources */,
