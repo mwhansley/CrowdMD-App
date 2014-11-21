@@ -43,12 +43,12 @@
     //injuryLabel.text = treatment.injury;
     injuryLabel.text = treatment.injury;
     
-    UILabel *treatmentLabel = (UILabel *)[cell viewWithTag:1];
+    UILabel *treatmentLabel = (UILabel *)[cell viewWithTag:2];
     treatmentLabel.text = treatment.treatment;
     
     
-    //    UIImageView* pictureView = (UIImageView *)[cell viewWithTag:3];
-    //    pictureView.image = treatment.picture;
+    UIImageView* pictureView = (UIImageView *)[cell viewWithTag:3];
+    pictureView.image = treatment.picture;
     
     return cell;
 }
@@ -57,10 +57,12 @@
     MyTreatment * treatmentOne = [[MyTreatment alloc] init];
     treatmentOne.treatment = @"Cortisone";
     treatmentOne.injury = @"Tennis Elbow";
+    treatmentOne.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
     
     MyTreatment * treatmentTwo = [[MyTreatment alloc] init];
-    treatmentTwo.treatment = @"PT";
+    treatmentTwo.treatment = @"Physical Therapy";
     treatmentTwo.injury = @"Tennis Elbow";
+    treatmentTwo.picture = [UIImage imageNamed:@"elbowPT.jpg"];
     
     self.treatments = [NSArray arrayWithObjects:treatmentOne, treatmentTwo, nil];
     [super viewDidLoad];

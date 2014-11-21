@@ -4,11 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Search-->
+        <!--Navigation Controller-->
         <scene sceneID="Qwi-5i-Dh4">
             <objects>
                 <navigationController id="Ji4-8X-uOV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="Q55-Oh-iov"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Q55-Oh-iov"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gNe-L4-DRH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -19,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXD-xc-cRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="568"/>
+            <point key="canvasLocation" x="438" y="-140"/>
         </scene>
         <!--Search an Injury-->
         <scene sceneID="fuc-eP-qZl">
@@ -97,7 +97,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1738" y="584"/>
+            <point key="canvasLocation" x="1554" y="-140"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="srn-zf-cIy">
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGE-Lk-2Vj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="1401"/>
+            <point key="canvasLocation" x="1087" y="1047"/>
         </scene>
         <!--Injury Detail View Controller-->
         <scene sceneID="yXC-5M-kh2">
@@ -171,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qd3-zu-Kh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2407" y="-152"/>
+            <point key="canvasLocation" x="2496" y="-140"/>
         </scene>
         <!--My Treatments-->
         <scene sceneID="xMT-6I-YFw">
@@ -211,7 +211,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3F5-6g-W1o">
-                                                            <rect key="frame" x="170" y="6" width="96" height="66"/>
+                                                            <rect key="frame" x="158" y="3" width="96" height="66"/>
                                                         </imageView>
                                                     </subviews>
                                                 </tableViewCellContentView>
@@ -219,7 +219,7 @@
                                                     <outlet property="injuryLabel" destination="qWR-UL-rZr" id="lOY-A4-HGf"/>
                                                     <outlet property="pictureView" destination="3F5-6g-W1o" id="Y3b-7e-22c"/>
                                                     <outlet property="treatmentLabel" destination="edu-WK-U9b" id="Tjz-cd-2La"/>
-                                                    <segue destination="4Kf-yT-K8T" kind="push" id="edR-6K-jwA"/>
+                                                    <segue destination="4Kf-yT-K8T" kind="push" id="CC8-oI-RuV"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -243,10 +243,10 @@
             </objects>
             <point key="canvasLocation" x="785" y="-1453"/>
         </scene>
-        <!--Title-->
+        <!--Feedback-->
         <scene sceneID="Id4-7P-qcR">
             <objects>
-                <viewController id="4Kf-yT-K8T" customClass="MyTreatmentDetailViewController" sceneMemberID="viewController">
+                <viewController title="Feedback" id="4Kf-yT-K8T" customClass="MyTreatmentDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8IP-Q5-vb7"/>
                         <viewControllerLayoutGuide type="bottom" id="WNj-kO-4qp"/>
@@ -319,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg4-t4-ocl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="-1391"/>
+            <point key="canvasLocation" x="1462" y="-991"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AeM-8R-n3J">
@@ -334,17 +334,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="49M-si-bHe"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eif-61-kAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2218" y="-1367"/>
+            <point key="canvasLocation" x="1462" y="-1743"/>
         </scene>
         <!--My Treatments-->
         <scene sceneID="HVg-sd-WcG">
             <objects>
                 <navigationController id="tye-uk-fIM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Treatments" id="hRC-kg-2Hp"/>
+                    <tabBarItem key="tabBarItem" title="My Treatments" image="icon_8204 copy-1" id="hRC-kg-2Hp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lnC-lG-hkp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -355,13 +356,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TwJ-n2-x5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156" y="-883"/>
+            <point key="canvasLocation" x="-228" y="-1391"/>
         </scene>
         <!--Body Search-->
         <scene sceneID="Pb6-2e-6pk">
             <objects>
                 <navigationController id="qA1-hA-njI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Body Search" id="F1P-Uz-gHr"/>
+                    <tabBarItem key="tabBarItem" title="Body Search" image="icon_7969 copy" selectedImage="icon_7969" id="F1P-Uz-gHr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8uK-Vh-pUO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -372,7 +373,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wn-VN-r1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-69" y="1495"/>
+            <point key="canvasLocation" x="-228" y="1047"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -392,7 +393,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-896" y="-152"/>
+            <point key="canvasLocation" x="-768" y="-140"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_7969" width="76" height="129"/>
+        <image name="icon_7969 copy" width="25" height="25"/>
+        <image name="icon_8204 copy-1" width="25" height="25"/>
+    </resources>
 </document>

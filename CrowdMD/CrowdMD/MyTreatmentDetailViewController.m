@@ -39,6 +39,7 @@
 }
 
 - (void)starRatingControl:(StarRatingControl *)control didUpdateRating:(NSUInteger)rating {
+   // self.myTreatment.rating = rating;
     _ratingLabel.text = [_ratingLabels objectAtIndex:rating];
 }
 
