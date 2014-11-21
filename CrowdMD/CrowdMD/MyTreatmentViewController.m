@@ -10,6 +10,7 @@
 #import "MyTreatment.h"
 #import "MyTreatmentDetailViewController.h"
 #import "MyTreatmentTableCell.h"
+#import "MyTreatmentInfoViewController.h"
 
 @interface MyTreatmentViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) NSArray* treatments;
@@ -21,9 +22,9 @@
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     MyTreatmentTableCell* cell = sender;
     NSIndexPath *indexPath =[self.tableView indexPathForCell:cell];
-    MyTreatmentDetailViewController* detail = segue.destinationViewController;
+    MyTreatmentInfoViewController* info = segue.destinationViewController;
     MyTreatment* myTreatment = self.treatments[indexPath.row];
-    detail.myTreatment = myTreatment;
+    info.myTreatment = myTreatment;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

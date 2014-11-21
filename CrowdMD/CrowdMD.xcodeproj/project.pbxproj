@@ -31,6 +31,7 @@
 		725EF9561A1A8B76004BC94D /* MyTreatmentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9551A1A8B76004BC94D /* MyTreatmentDetailViewController.m */; };
 		725EF9591A1A953E004BC94D /* Treatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9581A1A953E004BC94D /* Treatment.m */; };
 		725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF95B1A1A96D5004BC94D /* MyTreatment.m */; };
+		729502F01A1F3E40008A8A8B /* MyTreatmentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729502EF1A1F3E40008A8A8B /* MyTreatmentInfoViewController.m */; };
 		72A973831A1C72C0004F61CC /* MyTreatmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */; };
 		72FFC5C01A1D80D500657B36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5AC1A1D80D500657B36 /* InfoPlist.strings */; };
 		72FFC5C21A1D80D500657B36 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B01A1D80D500657B36 /* LICENSE */; };
@@ -96,6 +97,8 @@
 		725EF9581A1A953E004BC94D /* Treatment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Treatment.m; sourceTree = "<group>"; };
 		725EF95A1A1A96D5004BC94D /* MyTreatment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatment.h; sourceTree = "<group>"; };
 		725EF95B1A1A96D5004BC94D /* MyTreatment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatment.m; sourceTree = "<group>"; };
+		729502EE1A1F3E40008A8A8B /* MyTreatmentInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentInfoViewController.h; sourceTree = "<group>"; };
+		729502EF1A1F3E40008A8A8B /* MyTreatmentInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentInfoViewController.m; sourceTree = "<group>"; };
 		72A973811A1C72C0004F61CC /* MyTreatmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTreatmentViewController.h; sourceTree = "<group>"; };
 		72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTreatmentViewController.m; sourceTree = "<group>"; };
 		72FFC5AD1A1D80D500657B36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 				725EF9551A1A8B76004BC94D /* MyTreatmentDetailViewController.m */,
 				72A973811A1C72C0004F61CC /* MyTreatmentViewController.h */,
 				72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */,
+				729502EE1A1F3E40008A8A8B /* MyTreatmentInfoViewController.h */,
+				729502EF1A1F3E40008A8A8B /* MyTreatmentInfoViewController.m */,
 			);
 			name = MyTreatments;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 				7229A6851A15CE4C0027E510 /* SecondViewController.m in Sources */,
 				725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */,
 				72FFC5CB1A1D80D500657B36 /* StarRatingControl.m in Sources */,
+				729502F01A1F3E40008A8A8B /* MyTreatmentInfoViewController.m in Sources */,
 				7229A67F1A15CE4C0027E510 /* AppDelegate.m in Sources */,
 				725EF9561A1A8B76004BC94D /* MyTreatmentDetailViewController.m in Sources */,
 				7229A6821A15CE4C0027E510 /* FirstViewController.m in Sources */,

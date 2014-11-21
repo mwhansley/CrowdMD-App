@@ -268,7 +268,7 @@
                                                     <outlet property="pictureView" destination="e2j-ix-j2M" id="LTX-cE-Vdt"/>
                                                     <outlet property="stars" destination="ESB-Q1-3TP" id="LcS-Fa-iqi"/>
                                                     <outlet property="treatmentLabel" destination="edu-WK-U9b" id="Tjz-cd-2La"/>
-                                                    <segue destination="4Kf-yT-K8T" kind="push" id="CC8-oI-RuV"/>
+                                                    <segue destination="ADY-xn-Xjh" kind="push" id="dvr-hi-hCw"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -330,7 +330,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Iwz-Ja-zRl" kind="push" id="VSA-en-A7Q"/>
+                                    <segue destination="Iwz-Ja-zRl" kind="replace" splitViewControllerTargetIndex="1" id="VSA-en-A7Q"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="November 20th, 2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khL-dE-g5x">
@@ -361,7 +361,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="ITn-SE-8ih"/>
+                    <navigationItem key="navigationItem" title="Title" id="ITn-SE-8ih" userLabel="Feedback"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="dateLabel" destination="G9J-Aa-FOp" id="8C0-NG-Gz8"/>
@@ -372,12 +372,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg4-t4-ocl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1454" y="-967"/>
+            <point key="canvasLocation" x="1751" y="-1028"/>
         </scene>
-        <!--View Controller-->
+        <!--My Treatment Info View Controller-->
         <scene sceneID="AeM-8R-n3J">
             <objects>
-                <viewController id="ADY-xn-Xjh" sceneMemberID="viewController">
+                <viewController id="ADY-xn-Xjh" customClass="MyTreatmentInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Yo-b7-sjD"/>
                         <viewControllerLayoutGuide type="bottom" id="2kh-Ra-BlC"/>
@@ -389,17 +389,9 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8i2-ZT-0hU">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="iXL-17-cAO"/>
+                                    <navigationItem title="Treatment Information" id="iXL-17-cAO"/>
                                 </items>
                             </navigationBar>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OAN-xo-WHJ">
-                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="a6u-WO-j1F"/>
-                                    <tabBarItem systemItem="more" id="9Eo-0O-Wks"/>
-                                </items>
-                            </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Physical Therapy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkG-XF-Yai">
                                 <rect key="frame" x="16" y="77" width="288" height="43"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
@@ -407,7 +399,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgu-p6-vUQ">
-                                <rect key="frame" x="16" y="118" width="163" height="337"/>
+                                <rect key="frame" x="16" y="118" width="163" height="359"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Physical therapy">
                                         <attributes>
@@ -519,11 +511,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWf-UK-MkF">
-                                <rect key="frame" x="56" y="473" width="208" height="30"/>
+                                <rect key="frame" x="56" y="473" width="208" height="35"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <state key="normal" title="Save to My Treatments">
+                                <state key="normal" title="Give Feedback">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4Kf-yT-K8T" kind="push" id="9IQ-tc-cLG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JD-6t-aPL">
                                 <rect key="frame" x="187" y="326" width="102" height="30"/>
@@ -545,7 +540,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eif-61-kAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="-1657"/>
+            <point key="canvasLocation" x="1389" y="-1531"/>
         </scene>
         <!--My Treatments-->
         <scene sceneID="HVg-sd-WcG">
