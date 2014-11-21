@@ -50,6 +50,22 @@
     UIImageView* pictureView = (UIImageView *)[cell viewWithTag:3];
     pictureView.image = treatment.picture;
     
+    UIImageView* starsView = (UIImageView *)[cell viewWithTag:4];
+    
+    if(treatment.rating == 0) {
+        starsView.image = [UIImage imageNamed:@"Stars_0.png"];
+    } else if(treatment.rating == 1) {
+        starsView.image = [UIImage imageNamed:@"Stars_1.png"];
+    } else if(treatment.rating == 2) {
+        starsView.image = [UIImage imageNamed:@"Stars_2.png"];
+    } else if(treatment.rating == 3) {
+        starsView.image = [UIImage imageNamed:@"Stars_3.png"];
+    } else if(treatment.rating == 4) {
+        starsView.image = [UIImage imageNamed:@"Stars_4.png"];
+    } else if(treatment.rating == 5) {
+        starsView.image = [UIImage imageNamed:@"Stars_5.png"];
+    }
+    
     return cell;
 }
 
@@ -58,15 +74,17 @@
     treatmentOne.treatment = @"Cortisone";
     treatmentOne.injury = @"Tennis Elbow";
     treatmentOne.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
+    treatmentOne.rating = -1;
     
     MyTreatment * treatmentTwo = [[MyTreatment alloc] init];
     treatmentTwo.treatment = @"Physical Therapy";
     treatmentTwo.injury = @"Tennis Elbow";
     treatmentTwo.picture = [UIImage imageNamed:@"elbowPT.jpg"];
+    treatmentTwo.rating = -1;
     
     self.treatments = [NSArray arrayWithObjects:treatmentOne, treatmentTwo, nil];
     [super viewDidLoad];
-    
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -74,17 +92,10 @@
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)starRatingControl:(StarRatingControl *)control didUpdateRating:(NSUInteger)rating {
-  //  _ratingLabel.text = [_ratingLabels objectAtIndex:rating];
-}
-
-- (void)starRatingControl:(StarRatingControl *)control willUpdateRating:(NSUInteger)rating {
-   // _ratingLabel.text = [_ratingLabels objectAtIndex:rating];
 }
 
 /*

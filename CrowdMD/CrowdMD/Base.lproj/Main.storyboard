@@ -182,14 +182,59 @@
                         <viewControllerLayoutGuide type="bottom" id="TR6-jn-GCl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jyW-bk-4R2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1N-Ub-CWg">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="-99" y="-15" width="51" height="23"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hec-oZ-sS6">
+                                <rect key="frame" x="0.0" y="-159" width="363" height="727"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSR-Pc-0WX">
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="klT-DE-MqF">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <prototypes>
+                                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyTreatmentCell" rowHeight="73" id="7QU-mz-4RY" customClass="MyTreatmentTableCell">
+                                                        <rect key="frame" x="0.0" y="0.0" width="566" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7QU-mz-4RY" id="ueL-Po-AI8">
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Treatment " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6B-Yk-GSZ">
+                                                                    <rect key="frame" x="18" y="42" width="197" height="24"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Injury" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgY-sV-mw1">
+                                                                    <rect key="frame" x="18" y="8" width="144" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGy-PJ-coE"/>
+                                                            </subviews>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="injuryLabel" destination="hgY-sV-mw1" id="buK-k2-JXu"/>
+                                                            <outlet property="pictureView" destination="FGy-PJ-coE" id="NpF-An-rpl"/>
+                                                            <outlet property="treatmentLabel" destination="c6B-Yk-GSZ" id="xeS-Bg-rfI"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="Iwz-Ja-zRl" id="870-FG-6TQ"/>
+                                                    <outlet property="delegate" destination="Iwz-Ja-zRl" id="6rB-FD-9tD"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7Rp-Cy-Uz7">
-                                        <rect key="frame" x="0.0" y="36" width="566" height="564"/>
+                                        <rect key="frame" x="0.0" y="224" width="320" height="503"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyTreatmentCell" rowHeight="73" id="9Ww-tF-xrt" customClass="MyTreatmentTableCell">
@@ -199,8 +244,8 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Treatment " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edu-WK-U9b">
-                                                            <rect key="frame" x="18" y="41" width="406" height="24"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="18" y="32" width="167" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -210,14 +255,18 @@
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3F5-6g-W1o">
-                                                            <rect key="frame" x="158" y="3" width="96" height="66"/>
+                                                        <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="99" placeholderIntrinsicHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ESB-Q1-3TP">
+                                                            <rect key="frame" x="94" y="43" width="100" height="25"/>
+                                                        </imageView>
+                                                        <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="68" placeholderIntrinsicHeight="56" translatesAutoresizingMaskIntoConstraints="NO" id="e2j-ix-j2M">
+                                                            <rect key="frame" x="211" y="8" width="68" height="56"/>
                                                         </imageView>
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="injuryLabel" destination="qWR-UL-rZr" id="lOY-A4-HGf"/>
-                                                    <outlet property="pictureView" destination="3F5-6g-W1o" id="Y3b-7e-22c"/>
+                                                    <outlet property="pictureView" destination="e2j-ix-j2M" id="LTX-cE-Vdt"/>
+                                                    <outlet property="stars" destination="ESB-Q1-3TP" id="LcS-Fa-iqi"/>
                                                     <outlet property="treatmentLabel" destination="edu-WK-U9b" id="Tjz-cd-2La"/>
                                                     <segue destination="4Kf-yT-K8T" kind="push" id="CC8-oI-RuV"/>
                                                 </connections>
@@ -235,13 +284,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Treatments" id="QE6-h3-GU7"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="tableView" destination="7Rp-Cy-Uz7" id="vM2-nM-Tgc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRV-dN-SEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="-1453"/>
+            <point key="canvasLocation" x="791" y="-1468"/>
         </scene>
         <!--Feedback-->
         <scene sceneID="Id4-7P-qcR">
@@ -279,6 +329,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Iwz-Ja-zRl" kind="push" id="VSA-en-A7Q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="November 20th, 2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khL-dE-g5x">
                                 <rect key="frame" x="77" y="211" width="167" height="21"/>
@@ -401,4 +454,7 @@
         <image name="icon_7969 copy" width="25" height="25"/>
         <image name="icon_8204 copy-1" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VSA-en-A7Q"/>
+    </inferredMetricsTieBreakers>
 </document>

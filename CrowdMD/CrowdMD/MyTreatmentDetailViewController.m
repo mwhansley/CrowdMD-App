@@ -31,6 +31,8 @@
     [self.pictureView setImage:self.myTreatment.picture];
     _ratingLabels = [NSArray arrayWithObjects:@"Not Effective", @"Not-That Helpful", @"Kind-Of Helpful", @"Somewhat Effective", @"Very Effective", @"Extremely Effective", nil];
     
+    _starRatingControl.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,11 +41,12 @@
 }
 
 - (void)starRatingControl:(StarRatingControl *)control didUpdateRating:(NSUInteger)rating {
-   // self.myTreatment.rating = rating;
+    self.myTreatment.rating = rating;
     _ratingLabel.text = [_ratingLabels objectAtIndex:rating];
 }
 
 - (void)starRatingControl:(StarRatingControl *)control willUpdateRating:(NSUInteger)rating {
+    self.myTreatment.rating = rating;
     _ratingLabel.text = [_ratingLabels objectAtIndex:rating];
 }
 

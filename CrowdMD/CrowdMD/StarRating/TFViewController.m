@@ -21,9 +21,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	_ratingLabels = [NSArray arrayWithObjects:@"Unrated", @"Hate it", @"Don't like it", @"It's OK", @"It's good", @"It's great", nil];
-	
-	_starRatingControl.delegate = self;
+//	_ratingLabels = [NSArray arrayWithObjects:@"Unrated", @"Hate it", @"Don't like it", @"It's OK", @"It's good", @"It's great", nil];
+//	
+//	_starRatingControl.delegate = self;
 }
 
 - (void)viewDidUnload
@@ -38,11 +38,11 @@
 }
 
 - (void)starRatingControl:(StarRatingControl *)control didUpdateRating:(NSUInteger)rating {
-	_ratingLabel.text = [_ratingLabels objectAtIndex:rating];
+	//_ratingLabel.text = [_ratingLabels objectAtIndex:rating];
 }
 
 - (void)starRatingControl:(StarRatingControl *)control willUpdateRating:(NSUInteger)rating {
-	_ratingLabel.text = [_ratingLabels objectAtIndex:rating];
+	//_ratingLabel.text = [_ratingLabels objectAtIndex:rating];
 }
 
 @end

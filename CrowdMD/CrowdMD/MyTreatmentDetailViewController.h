@@ -10,7 +10,7 @@
 #import "MyTreatment.h"
 #import "StarRatingControl.h"
 
-@interface MyTreatmentDetailViewController : UIViewController
+@interface MyTreatmentDetailViewController : UIViewController  <StarRatingDelegate>
 @property (nonatomic,strong) MyTreatment* myTreatment;
 @property (weak) IBOutlet StarRatingControl *starRatingControl;
 @property (weak) IBOutlet UILabel *ratingLabel;
