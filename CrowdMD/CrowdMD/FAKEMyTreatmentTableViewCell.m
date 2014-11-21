@@ -29,9 +29,15 @@
     [self.pictureView setImage:self.myTreatment.picture];
     
     self.stars.contentMode = UIViewContentModeScaleAspectFit;
+<<<<<<< Updated upstream
     if(self.myTreatment.rating != -2) {
         [self.stars setImage:[UIImage imageNamed:@"Stars_4.png"]];
     }
+=======
+//    if(self.myTreatment.rating != -1) {
+        [self.stars setImage:[UIImage imageNamed:@"4.png"]];
+//    }
+>>>>>>> Stashed changes
     
     
     

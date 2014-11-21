@@ -45,6 +45,7 @@
 		7D371CD91A1F568E0006ADBA /* Stars_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D371CD31A1F568E0006ADBA /* Stars_3.png */; };
 		7D371CDA1A1F568E0006ADBA /* Stars_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D371CD41A1F568E0006ADBA /* Stars_4.png */; };
 		7D371CDB1A1F568E0006ADBA /* Stars_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D371CD51A1F568E0006ADBA /* Stars_5.png */; };
+		7DDBEBC41A1FAEFB00979265 /* UIStoryboardSegue+DismissSegue_m.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDBEBC31A1FAEFB00979265 /* UIStoryboardSegue+DismissSegue_m.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,9 @@
 		7D371CD31A1F568E0006ADBA /* Stars_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_3.png; path = ../Stars_3.png; sourceTree = "<group>"; };
 		7D371CD41A1F568E0006ADBA /* Stars_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_4.png; path = ../Stars_4.png; sourceTree = "<group>"; };
 		7D371CD51A1F568E0006ADBA /* Stars_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_5.png; path = ../Stars_5.png; sourceTree = "<group>"; };
+		7DDBEBC11A1FAE8100979265 /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
+		7DDBEBC21A1FAEFB00979265 /* UIStoryboardSegue+DismissSegue_m.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+DismissSegue_m.h"; sourceTree = "<group>"; };
+		7DDBEBC31A1FAEFB00979265 /* UIStoryboardSegue+DismissSegue_m.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+DismissSegue_m.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,9 @@
 				7229A6831A15CE4C0027E510 /* SecondViewController.h */,
 				7229A6841A15CE4C0027E510 /* SecondViewController.m */,
 				7229A6861A15CE4C0027E510 /* Main.storyboard */,
+				7DDBEBC11A1FAE8100979265 /* DismissSegue.h */,
+				7DDBEBC21A1FAEFB00979265 /* UIStoryboardSegue+DismissSegue_m.h */,
+				7DDBEBC31A1FAEFB00979265 /* UIStoryboardSegue+DismissSegue_m.m */,
 				7229A6891A15CE4C0027E510 /* Images.xcassets */,
 				7229A68B1A15CE4C0027E510 /* LaunchScreen.xib */,
 				7229A6791A15CE4C0027E510 /* Supporting Files */,
@@ -398,6 +405,7 @@
 				725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */,
 				72FFC5CB1A1D80D500657B36 /* StarRatingControl.m in Sources */,
 				729502F01A1F3E40008A8A8B /* MyTreatmentInfoViewController.m in Sources */,
+				7DDBEBC41A1FAEFB00979265 /* UIStoryboardSegue+DismissSegue_m.m in Sources */,
 				7229A67F1A15CE4C0027E510 /* AppDelegate.m in Sources */,
 				725EF9561A1A8B76004BC94D /* MyTreatmentDetailViewController.m in Sources */,
 				7229A6821A15CE4C0027E510 /* FirstViewController.m in Sources */,
