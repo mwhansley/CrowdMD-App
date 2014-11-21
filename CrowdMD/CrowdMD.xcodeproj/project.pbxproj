@@ -17,12 +17,6 @@
 		7229A6991A15CE4D0027E510 /* CrowdMDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6981A15CE4D0027E510 /* CrowdMDTests.m */; };
 		7229A6A41A15D1E50027E510 /* InjuryTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6A31A15D1E50027E510 /* InjuryTableCell.m */; };
 		7229A6AA1A15D78F0027E510 /* InjuryTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6A91A15D78F0027E510 /* InjuryTableController.m */; };
-		7237A7061A1F284100920318 /* Stars_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7237A7001A1F284100920318 /* Stars_0.png */; };
-		7237A7071A1F284100920318 /* Stars_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7237A7011A1F284100920318 /* Stars_1.png */; };
-		7237A7081A1F284100920318 /* Stars_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7237A7021A1F284100920318 /* Stars_2.png */; };
-		7237A7091A1F284100920318 /* Stars_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7237A7031A1F284100920318 /* Stars_3.png */; };
-		7237A70A1A1F284100920318 /* Stars_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7237A7041A1F284100920318 /* Stars_4.png */; };
-		7237A70B1A1F284100920318 /* Stars_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7237A7051A1F284100920318 /* Stars_5.png */; };
 		7237A70E1A1F286700920318 /* elbowCortisone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7237A70C1A1F286700920318 /* elbowCortisone.jpg */; };
 		7237A70F1A1F286700920318 /* elbowPT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7237A70D1A1F286700920318 /* elbowPT.jpg */; };
 		725EF9481A1A7B65004BC94D /* Injury.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9471A1A7B65004BC94D /* Injury.m */; };
@@ -45,6 +39,12 @@
 		72FFC5CB1A1D80D500657B36 /* StarRatingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FFC5BB1A1D80D500657B36 /* StarRatingControl.m */; };
 		72FFC5CC1A1D80D500657B36 /* TFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FFC5BD1A1D80D500657B36 /* TFAppDelegate.m */; };
 		72FFC5CD1A1D80D500657B36 /* TFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72FFC5BF1A1D80D500657B36 /* TFViewController.m */; };
+		7D371CD61A1F568E0006ADBA /* Stars_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D371CD01A1F568E0006ADBA /* Stars_0.png */; };
+		7D371CD71A1F568E0006ADBA /* Stars_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D371CD11A1F568E0006ADBA /* Stars_1.png */; };
+		7D371CD81A1F568E0006ADBA /* Stars_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D371CD21A1F568E0006ADBA /* Stars_2.png */; };
+		7D371CD91A1F568E0006ADBA /* Stars_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D371CD31A1F568E0006ADBA /* Stars_3.png */; };
+		7D371CDA1A1F568E0006ADBA /* Stars_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D371CD41A1F568E0006ADBA /* Stars_4.png */; };
+		7D371CDB1A1F568E0006ADBA /* Stars_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D371CD51A1F568E0006ADBA /* Stars_5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,14 +77,8 @@
 		7229A6A31A15D1E50027E510 /* InjuryTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjuryTableCell.m; sourceTree = "<group>"; };
 		7229A6A81A15D78E0027E510 /* InjuryTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjuryTableController.h; sourceTree = "<group>"; };
 		7229A6A91A15D78F0027E510 /* InjuryTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjuryTableController.m; sourceTree = "<group>"; };
-		7237A7001A1F284100920318 /* Stars_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_0.png; path = ../../../../../../Downloads/Stars/Stars_0.png; sourceTree = "<group>"; };
-		7237A7011A1F284100920318 /* Stars_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_1.png; path = ../../../../../../Downloads/Stars/Stars_1.png; sourceTree = "<group>"; };
-		7237A7021A1F284100920318 /* Stars_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_2.png; path = ../../../../../../Downloads/Stars/Stars_2.png; sourceTree = "<group>"; };
-		7237A7031A1F284100920318 /* Stars_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_3.png; path = ../../../../../../Downloads/Stars/Stars_3.png; sourceTree = "<group>"; };
-		7237A7041A1F284100920318 /* Stars_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_4.png; path = ../../../../../../Downloads/Stars/Stars_4.png; sourceTree = "<group>"; };
-		7237A7051A1F284100920318 /* Stars_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_5.png; path = ../../../../../../Downloads/Stars/Stars_5.png; sourceTree = "<group>"; };
-		7237A70C1A1F286700920318 /* elbowCortisone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = elbowCortisone.jpg; path = "/Users/Megan1/Documents/14-15 Stanford/CS 147/CrowdMD/CrowdMD/CrowdMD/Images.xcassets/elbowCortisone.jpg"; sourceTree = "<absolute>"; };
-		7237A70D1A1F286700920318 /* elbowPT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = elbowPT.jpg; path = "/Users/Megan1/Documents/14-15 Stanford/CS 147/CrowdMD/CrowdMD/CrowdMD/Images.xcassets/elbowPT.jpg"; sourceTree = "<absolute>"; };
+		7237A70C1A1F286700920318 /* elbowCortisone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elbowCortisone.jpg; sourceTree = "<group>"; };
+		7237A70D1A1F286700920318 /* elbowPT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elbowPT.jpg; sourceTree = "<group>"; };
 		725EF9461A1A7B65004BC94D /* Injury.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Injury.h; sourceTree = "<group>"; };
 		725EF9471A1A7B65004BC94D /* Injury.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Injury.m; sourceTree = "<group>"; };
 		725EF9491A1A7CA8004BC94D /* InjuryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjuryDetailViewController.h; sourceTree = "<group>"; };
@@ -117,6 +111,12 @@
 		72FFC5BD1A1D80D500657B36 /* TFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFAppDelegate.m; sourceTree = "<group>"; };
 		72FFC5BE1A1D80D500657B36 /* TFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFViewController.h; sourceTree = "<group>"; };
 		72FFC5BF1A1D80D500657B36 /* TFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFViewController.m; sourceTree = "<group>"; };
+		7D371CD01A1F568E0006ADBA /* Stars_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_0.png; path = ../Stars_0.png; sourceTree = "<group>"; };
+		7D371CD11A1F568E0006ADBA /* Stars_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_1.png; path = ../Stars_1.png; sourceTree = "<group>"; };
+		7D371CD21A1F568E0006ADBA /* Stars_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_2.png; path = ../Stars_2.png; sourceTree = "<group>"; };
+		7D371CD31A1F568E0006ADBA /* Stars_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_3.png; path = ../Stars_3.png; sourceTree = "<group>"; };
+		7D371CD41A1F568E0006ADBA /* Stars_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_4.png; path = ../Stars_4.png; sourceTree = "<group>"; };
+		7D371CD51A1F568E0006ADBA /* Stars_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_5.png; path = ../Stars_5.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,14 +207,14 @@
 		7237A6FF1A1F27F000920318 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				7D371CD01A1F568E0006ADBA /* Stars_0.png */,
+				7D371CD11A1F568E0006ADBA /* Stars_1.png */,
+				7D371CD21A1F568E0006ADBA /* Stars_2.png */,
+				7D371CD31A1F568E0006ADBA /* Stars_3.png */,
+				7D371CD41A1F568E0006ADBA /* Stars_4.png */,
+				7D371CD51A1F568E0006ADBA /* Stars_5.png */,
 				7237A70C1A1F286700920318 /* elbowCortisone.jpg */,
 				7237A70D1A1F286700920318 /* elbowPT.jpg */,
-				7237A7001A1F284100920318 /* Stars_0.png */,
-				7237A7011A1F284100920318 /* Stars_1.png */,
-				7237A7021A1F284100920318 /* Stars_2.png */,
-				7237A7031A1F284100920318 /* Stars_3.png */,
-				7237A7041A1F284100920318 /* Stars_4.png */,
-				7237A7051A1F284100920318 /* Stars_5.png */,
 			);
 			name = Pictures;
 			sourceTree = "<group>";
@@ -355,25 +355,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				72FFC5CA1A1D80D500657B36 /* StarRating-Info.plist in Resources */,
-				7237A7081A1F284100920318 /* Stars_2.png in Resources */,
+				7D371CD81A1F568E0006ADBA /* Stars_2.png in Resources */,
 				72FFC5C21A1D80D500657B36 /* LICENSE in Resources */,
 				7229A6881A15CE4C0027E510 /* Main.storyboard in Resources */,
 				72FFC5C01A1D80D500657B36 /* InfoPlist.strings in Resources */,
 				72FFC5C61A1D80D500657B36 /* star.psd in Resources */,
-				7237A7071A1F284100920318 /* Stars_1.png in Resources */,
 				7229A68D1A15CE4C0027E510 /* LaunchScreen.xib in Resources */,
 				72FFC5C71A1D80D500657B36 /* star@2x.png in Resources */,
-				7237A7061A1F284100920318 /* Stars_0.png in Resources */,
 				72FFC5C81A1D80D500657B36 /* star_highlighted.png in Resources */,
 				72FFC5C51A1D80D500657B36 /* star.png in Resources */,
-				7237A70A1A1F284100920318 /* Stars_4.png in Resources */,
-				7237A70B1A1F284100920318 /* Stars_5.png in Resources */,
+				7D371CD91A1F568E0006ADBA /* Stars_3.png in Resources */,
 				7237A70E1A1F286700920318 /* elbowCortisone.jpg in Resources */,
 				7237A70F1A1F286700920318 /* elbowPT.jpg in Resources */,
+				7D371CD61A1F568E0006ADBA /* Stars_0.png in Resources */,
 				7229A68A1A15CE4C0027E510 /* Images.xcassets in Resources */,
-				7237A7091A1F284100920318 /* Stars_3.png in Resources */,
 				72FFC5C91A1D80D500657B36 /* star_highlighted@2x.png in Resources */,
 				72FFC5C41A1D80D500657B36 /* README in Resources */,
+				7D371CDB1A1F568E0006ADBA /* Stars_5.png in Resources */,
+				7D371CD71A1F568E0006ADBA /* Stars_1.png in Resources */,
+				7D371CDA1A1F568E0006ADBA /* Stars_4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
