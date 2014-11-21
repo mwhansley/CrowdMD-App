@@ -83,8 +83,8 @@
 		7237A7031A1F284100920318 /* Stars_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_3.png; path = ../../../../../../Downloads/Stars/Stars_3.png; sourceTree = "<group>"; };
 		7237A7041A1F284100920318 /* Stars_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_4.png; path = ../../../../../../Downloads/Stars/Stars_4.png; sourceTree = "<group>"; };
 		7237A7051A1F284100920318 /* Stars_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stars_5.png; path = ../../../../../../Downloads/Stars/Stars_5.png; sourceTree = "<group>"; };
-		7237A70C1A1F286700920318 /* elbowCortisone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elbowCortisone.jpg; sourceTree = "<group>"; };
-		7237A70D1A1F286700920318 /* elbowPT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elbowPT.jpg; sourceTree = "<group>"; };
+		7237A70C1A1F286700920318 /* elbowCortisone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = elbowCortisone.jpg; path = "/Users/Megan1/Documents/14-15 Stanford/CS 147/CrowdMD/CrowdMD/CrowdMD/Images.xcassets/elbowCortisone.jpg"; sourceTree = "<absolute>"; };
+		7237A70D1A1F286700920318 /* elbowPT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = elbowPT.jpg; path = "/Users/Megan1/Documents/14-15 Stanford/CS 147/CrowdMD/CrowdMD/CrowdMD/Images.xcassets/elbowPT.jpg"; sourceTree = "<absolute>"; };
 		725EF9461A1A7B65004BC94D /* Injury.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Injury.h; sourceTree = "<group>"; };
 		725EF9471A1A7B65004BC94D /* Injury.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Injury.m; sourceTree = "<group>"; };
 		725EF9491A1A7CA8004BC94D /* InjuryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjuryDetailViewController.h; sourceTree = "<group>"; };
