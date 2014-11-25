@@ -19,6 +19,9 @@
 		7229A6991A15CE4D0027E510 /* CrowdMDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6981A15CE4D0027E510 /* CrowdMDTests.m */; };
 		7229A6A41A15D1E50027E510 /* InjuryTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6A31A15D1E50027E510 /* InjuryTableCell.m */; };
 		7229A6AA1A15D78F0027E510 /* InjuryTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6A91A15D78F0027E510 /* InjuryTableController.m */; };
+		724AAA311A24FA0000E50A5E /* TreatmentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAA301A24FA0000E50A5E /* TreatmentTableCell.m */; };
+		724AAA341A24FD1700E50A5E /* TreatmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAA331A24FD1700E50A5E /* TreatmentViewController.m */; };
+		724AAA371A24FDE000E50A5E /* TreatmentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AAA361A24FDE000E50A5E /* TreatmentInfoViewController.m */; };
 		725EF9481A1A7B65004BC94D /* Injury.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9471A1A7B65004BC94D /* Injury.m */; };
 		725EF94B1A1A7CA8004BC94D /* InjuryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF94A1A1A7CA8004BC94D /* InjuryDetailViewController.m */; };
 		725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725EF9521A1A8AEF004BC94D /* MyTreatmentTableCell.m */; };
@@ -80,6 +83,12 @@
 		7229A6A31A15D1E50027E510 /* InjuryTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjuryTableCell.m; sourceTree = "<group>"; };
 		7229A6A81A15D78E0027E510 /* InjuryTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjuryTableController.h; sourceTree = "<group>"; };
 		7229A6A91A15D78F0027E510 /* InjuryTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjuryTableController.m; sourceTree = "<group>"; };
+		724AAA2F1A24FA0000E50A5E /* TreatmentTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentTableCell.h; sourceTree = "<group>"; };
+		724AAA301A24FA0000E50A5E /* TreatmentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentTableCell.m; sourceTree = "<group>"; };
+		724AAA321A24FD1700E50A5E /* TreatmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentViewController.h; sourceTree = "<group>"; };
+		724AAA331A24FD1700E50A5E /* TreatmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentViewController.m; sourceTree = "<group>"; };
+		724AAA351A24FDDF00E50A5E /* TreatmentInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentInfoViewController.h; sourceTree = "<group>"; };
+		724AAA361A24FDE000E50A5E /* TreatmentInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentInfoViewController.m; sourceTree = "<group>"; };
 		725EF9461A1A7B65004BC94D /* Injury.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Injury.h; sourceTree = "<group>"; };
 		725EF9471A1A7B65004BC94D /* Injury.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Injury.m; sourceTree = "<group>"; };
 		725EF9491A1A7CA8004BC94D /* InjuryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjuryDetailViewController.h; sourceTree = "<group>"; };
@@ -162,6 +171,7 @@
 		7229A6781A15CE4C0027E510 /* CrowdMD */ = {
 			isa = PBXGroup;
 			children = (
+				724AAA2E1A24F9B600E50A5E /* Treatment */,
 				7237A6FF1A1F27F000920318 /* Pictures */,
 				72FFC5AB1A1D80D500657B36 /* StarRating */,
 				725EF9501A1A8985004BC94D /* MyTreatments */,
@@ -179,8 +189,6 @@
 				7229A6891A15CE4C0027E510 /* Images.xcassets */,
 				7229A68B1A15CE4C0027E510 /* LaunchScreen.xib */,
 				7229A6791A15CE4C0027E510 /* Supporting Files */,
-				725EF9571A1A953E004BC94D /* Treatment.h */,
-				725EF9581A1A953E004BC94D /* Treatment.m */,
 			);
 			path = CrowdMD;
 			sourceTree = "<group>";
@@ -224,6 +232,21 @@
 				7D371CD51A1F568E0006ADBA /* Stars_5.png */,
 			);
 			name = Pictures;
+			sourceTree = "<group>";
+		};
+		724AAA2E1A24F9B600E50A5E /* Treatment */ = {
+			isa = PBXGroup;
+			children = (
+				725EF9571A1A953E004BC94D /* Treatment.h */,
+				725EF9581A1A953E004BC94D /* Treatment.m */,
+				724AAA2F1A24FA0000E50A5E /* TreatmentTableCell.h */,
+				724AAA301A24FA0000E50A5E /* TreatmentTableCell.m */,
+				724AAA321A24FD1700E50A5E /* TreatmentViewController.h */,
+				724AAA331A24FD1700E50A5E /* TreatmentViewController.m */,
+				724AAA351A24FDDF00E50A5E /* TreatmentInfoViewController.h */,
+				724AAA361A24FDE000E50A5E /* TreatmentInfoViewController.m */,
+			);
+			name = Treatment;
 			sourceTree = "<group>";
 		};
 		725EF94F1A1A8969004BC94D /* Injury */ = {
@@ -398,12 +421,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724AAA311A24FA0000E50A5E /* TreatmentTableCell.m in Sources */,
 				72FFC5CC1A1D80D500657B36 /* TFAppDelegate.m in Sources */,
 				725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */,
 				72FFC5CD1A1D80D500657B36 /* TFViewController.m in Sources */,
 				7229A6851A15CE4C0027E510 /* SecondViewController.m in Sources */,
 				725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */,
 				72FFC5CB1A1D80D500657B36 /* StarRatingControl.m in Sources */,
+				724AAA341A24FD1700E50A5E /* TreatmentViewController.m in Sources */,
 				729502F01A1F3E40008A8A8B /* MyTreatmentInfoViewController.m in Sources */,
 				7DDBEBC41A1FAEFB00979265 /* UIStoryboardSegue+DismissSegue_m.m in Sources */,
 				7229A67F1A15CE4C0027E510 /* AppDelegate.m in Sources */,
@@ -411,6 +436,7 @@
 				7229A6821A15CE4C0027E510 /* FirstViewController.m in Sources */,
 				725EF9591A1A953E004BC94D /* Treatment.m in Sources */,
 				7229A6A41A15D1E50027E510 /* InjuryTableCell.m in Sources */,
+				724AAA371A24FDE000E50A5E /* TreatmentInfoViewController.m in Sources */,
 				725EF94B1A1A7CA8004BC94D /* InjuryDetailViewController.m in Sources */,
 				725EF9481A1A7B65004BC94D /* Injury.m in Sources */,
 				7229A6AA1A15D78F0027E510 /* InjuryTableController.m in Sources */,

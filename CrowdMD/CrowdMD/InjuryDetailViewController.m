@@ -18,6 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.nameLabel.text = self.injury.name;
+    self.descriptionLabel.text = self.injury.longDescription;
+    self.pictureView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.pictureView setImage:self.injury.picture];
 //    self.nameLabel.text = self.album.userName;
 //    self.eventLabel.text = self.album.event;
 //    self.eventDescriptionLabel.text = self.album.eventDescription;

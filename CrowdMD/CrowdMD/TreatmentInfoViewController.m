@@ -1,38 +1,28 @@
 //
-//  MyTreatmentInfoViewController.m
+//  TreatmentInfoViewController.m
 //  CrowdMD
 //
-//  Created by Megan Hansley on 11/21/14.
+//  Created by Megan Hansley on 11/25/14.
 //  Copyright (c) 2014 Baris, Chris, and Megan. All rights reserved.
 //
 
-#import "MyTreatmentInfoViewController.h"
-#import "MyTreatmentTableCell.h"
-#import "MyTreatmentDetailViewController.h"
-#import "MyTreatment.h"
+#import "TreatmentInfoViewController.h"
 
-@interface MyTreatmentInfoViewController ()
-@property (nonatomic, strong) IBOutlet UILabel* treatmentLabel;
+@interface TreatmentInfoViewController ()
+@property (nonatomic, strong) IBOutlet UILabel* nameLabel;
 @property (nonatomic, strong) IBOutlet UILabel* injuryLabel;
 @property (nonatomic, strong) IBOutlet UILabel* descriptionLabel;
 @property (nonatomic,strong) IBOutlet UIImageView* pictureView;
 @end
 
-@implementation MyTreatmentInfoViewController
-
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
-    MyTreatmentDetailViewController* detail = segue.destinationViewController;
-    MyTreatment* myTreatment = self.myTreatment;
-    detail.myTreatment = myTreatment;
-}
+@implementation TreatmentInfoViewController
 
 - (void)viewDidLoad {
-    self.treatmentLabel.text = self.myTreatment.treatment;
-    self.injuryLabel.text = self.myTreatment.injury;
+    self.injuryLabel.text = self.treatment.injuryName;
+    self.nameLabel.text = self.treatment.name;
     self.pictureView.contentMode = UIViewContentModeScaleAspectFit;
-    self.descriptionLabel.text = self.myTreatment.longDescription;
-    [self.pictureView setImage:self.myTreatment.picture];
+    self.descriptionLabel.text = self.treatment.longDescription;
+    [self.pictureView setImage:self.treatment.picture];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
