@@ -86,9 +86,21 @@
 
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    //injuries = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    Injury * injuryOne = [[Injury alloc] init];
+    injuryOne.name = @"Tennis Elbow";
+    injuryOne.shortDescription = @"An overuse injury in the elbow that feels sharp and focused";
+    injuryOne.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
+    injuryOne.longDescription = @"Long Description for Tennis Elbow";
     
+    Injury * injuryTwo = [[Injury alloc] init];
+    injuryTwo.name = @"Elbow Soreness";
+    injuryOne.shortDescription = @"An overuse injury in the elbow that feels sharp and focused";
+    injuryOne.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
+    injuryOne.longDescription = @"Long Description for Tennis Elbow";
+    
+    injuries = [NSArray arrayWithObjects:injuryOne, injuryTwo, nil];
+    [super viewDidLoad];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -104,9 +116,8 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -117,6 +128,12 @@
     } else {
         return [injuries count];
     }
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 71;
 }
 
 /*

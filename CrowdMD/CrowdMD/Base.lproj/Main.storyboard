@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="8qn-ci-B0p" kind="relationship" relationship="rootViewController" id="zqQ-lw-4wd"/>
+                        <segue destination="48g-mD-yIa" kind="relationship" relationship="rootViewController" id="7sz-y1-lgX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXD-xc-cRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -22,41 +22,38 @@
             <point key="canvasLocation" x="438" y="-140"/>
         </scene>
         <!--Search an Injury-->
-        <scene sceneID="fuc-eP-qZl">
+        <scene sceneID="ur6-zh-OHs">
             <objects>
-                <tableViewController id="8qn-ci-B0p" customClass="TableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="ENv-rY-AnG" customClass="UISea">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <tableViewController id="48g-mD-yIa" customClass="InjuryTableController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1ei-L5-CXa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" text="" id="2PA-Wz-vdk">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="8qn-ci-B0p" id="7UV-QR-tJl"/>
-                            </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="100" id="e0u-lr-ywe" customClass="InjuryTableCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="InjuryCell" rowHeight="100" id="e0u-lr-ywe" customClass="InjuryTableCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e0u-lr-ywe" id="dAA-YT-xwA">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tennis Elbow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trr-gS-XW7">
-                                            <rect key="frame" x="222" y="9" width="225" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tennis Elbow" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trr-gS-XW7">
+                                            <rect key="frame" x="8" y="8" width="225" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hjkfghjdytjdkgjkhklnklnl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-hT-khn">
-                                            <rect key="frame" x="222" y="39" width="312" height="47"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Injury Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-hT-khn">
+                                            <rect key="frame" x="8" y="39" width="312" height="47"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vVR-p9-6cD">
-                                            <rect key="frame" x="8" y="7" width="128" height="79"/>
+                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="103" placeholderIntrinsicHeight="72" translatesAutoresizingMaskIntoConstraints="NO" id="vVR-p9-6cD">
+                                            <rect key="frame" x="176" y="14" width="103" height="72"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -69,35 +66,16 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="8qn-ci-B0p" id="ox0-eY-UC8"/>
-                            <outlet property="delegate" destination="8qn-ci-B0p" id="na0-x9-AiC"/>
+                            <outlet property="dataSource" destination="48g-mD-yIa" id="Grb-1Y-KY0"/>
+                            <outlet property="delegate" destination="48g-mD-yIa" id="9YL-Oj-DuC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Search an Injury" id="abD-3D-CV2"/>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="3pb-Y9-3Zd" id="Gar-eb-7FK"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Search an Injury" id="rjV-yg-GkJ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="psC-o1-fkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="OVv-9h-PAX">
-                    <connections>
-                        <outlet property="delegate" destination="8qn-ci-B0p" id="GRj-RN-c8W"/>
-                        <outlet property="searchContentsController" destination="8qn-ci-B0p" id="170-UM-d9R"/>
-                        <outlet property="searchResultsDataSource" destination="8qn-ci-B0p" id="rqe-Cl-tq3"/>
-                        <outlet property="searchResultsDelegate" destination="8qn-ci-B0p" id="jeL-Mb-VD6"/>
-                    </connections>
-                </searchDisplayController>
-                <searchDisplayController id="3pb-Y9-3Zd">
-                    <connections>
-                        <outlet property="delegate" destination="8qn-ci-B0p" id="mxQ-C4-iXr"/>
-                        <outlet property="searchBar" destination="2PA-Wz-vdk" id="dZt-Wx-7LM"/>
-                        <outlet property="searchContentsController" destination="8qn-ci-B0p" id="8Sd-bh-tCt"/>
-                        <outlet property="searchResultsDataSource" destination="8qn-ci-B0p" id="jd5-Fs-1EB"/>
-                        <outlet property="searchResultsDelegate" destination="8qn-ci-B0p" id="jfy-t6-lTI"/>
-                    </connections>
-                </searchDisplayController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTU-dX-z0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="-140"/>
+            <point key="canvasLocation" x="1126" y="-165"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="srn-zf-cIy">
@@ -108,11 +86,10 @@
                         <viewControllerLayoutGuide type="bottom" id="Z8V-74-ugs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="22b-ZJ-P7h">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KHS-et-d0t">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -171,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qd3-zu-Kh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2496" y="-140"/>
+            <point key="canvasLocation" x="1743" y="-165"/>
         </scene>
         <!--My Treatments-->
         <scene sceneID="xMT-6I-YFw">
@@ -297,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRV-dN-SEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947" y="-819"/>
+            <point key="canvasLocation" x="789" y="-1097"/>
         </scene>
         <!--Feedback-->
         <scene sceneID="Id4-7P-qcR">
@@ -593,6 +570,7 @@
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>

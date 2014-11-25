@@ -12,6 +12,7 @@
 @interface Injury : NSObject
 @property (nonatomic,strong)NSString* name;
 @property (nonatomic,strong)NSString* shortDescription;
+@property (strong) NSArray* treatments;
+@property (nonatomic, strong) NSString* longDescription;
 @property (nonatomic)UIImage* picture;
-//Add something for array of treatment plans!!
 @end
