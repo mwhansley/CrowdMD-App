@@ -161,7 +161,7 @@
                                     <segment title="Treatments"/>
                                 </segments>
                                 <connections>
-                                    <segue destination="SVi-Uk-oCR" kind="showDetail" id="3gn-Sm-xWj"/>
+                                    <action selector="segmentedControlAction:" destination="I3p-dH-bbg" eventType="valueChanged" id="vM1-bE-Sll"/>
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AxW-yj-r89">
@@ -185,6 +185,7 @@
                         <outlet property="descriptionLabel" destination="Euu-UB-t0u" id="1sq-pY-p6D"/>
                         <outlet property="nameLabel" destination="4a9-ri-6G4" id="p5t-mx-uGP"/>
                         <outlet property="pictureView" destination="AxW-yj-r89" id="kdd-OU-8gJ"/>
+                        <outlet property="segmentedControl" destination="zjL-g6-49f" id="md7-lg-LYF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qd3-zu-Kh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -194,7 +195,7 @@
         <!--Suggested Treatments-->
         <scene sceneID="0jd-ly-NMo">
             <objects>
-                <viewController id="SVi-Uk-oCR" customClass="TreatmentViewController" sceneMemberID="viewController">
+                <viewController title="Suggested Treatments" id="SVi-Uk-oCR" customClass="TreatmentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J3I-Xh-CqV"/>
                         <viewControllerLayoutGuide type="bottom" id="E3M-s2-eEZ"/>
@@ -209,9 +210,6 @@
                                     <segment title="Details"/>
                                     <segment title="Treatments"/>
                                 </segments>
-                                <connections>
-                                    <segue destination="I3p-dH-bbg" kind="showDetail" id="qnA-jA-sdj"/>
-                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h4I-fM-rw9">
                                 <rect key="frame" x="0.0" y="103" width="320" height="416"/>
@@ -247,7 +245,7 @@
                                             <outlet property="pictureView" destination="Hbg-pF-eXB" id="J8e-cL-bR3"/>
                                             <outlet property="shortDescription" destination="o4g-L3-x6x" id="clh-6P-fsd"/>
                                             <outlet property="stars" destination="teq-zD-XEh" id="niF-m7-Tjv"/>
-                                            <segue destination="7YQ-jB-uyR" kind="push" id="HYN-Ja-Uvz"/>
+                                            <segue destination="7YQ-jB-uyR" kind="presentation" id="HYN-Ja-Uvz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -664,6 +662,9 @@
                                 <state key="normal" title="Add to My Treatments">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="SVi-Uk-oCR" kind="custom" customClass="DismissSegue" id="KML-gH-oaR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jah-9j-pyw">
                                 <rect key="frame" x="187" y="326" width="102" height="30"/>
@@ -709,7 +710,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="su0-fs-5SY"/>
         <segue reference="g7h-Rs-Ky2"/>
         <segue reference="r5x-v6-2pa"/>
     </inferredMetricsTieBreakers>

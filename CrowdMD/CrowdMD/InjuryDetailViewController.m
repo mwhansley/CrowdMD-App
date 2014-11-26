@@ -15,6 +15,7 @@
 @end
 
 @implementation InjuryDetailViewController
+@synthesize segmentedControl;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,11 +23,11 @@
     self.descriptionLabel.text = self.injury.longDescription;
     self.pictureView.contentMode = UIViewContentModeScaleAspectFit;
     [self.pictureView setImage:self.injury.picture];
-//    self.nameLabel.text = self.album.userName;
-//    self.eventLabel.text = self.album.event;
-//    self.eventDescriptionLabel.text = self.album.eventDescription;
-//    self.outfitImageView.contentMode = UIViewContentModeScaleAspectFit;
-//    [self.outfitImageView setImage:self.album.albumImage];
+    //    self.nameLabel.text = self.album.userName;
+    //    self.eventLabel.text = self.album.event;
+    //    self.eventDescriptionLabel.text = self.album.eventDescription;
+    //    self.outfitImageView.contentMode = UIViewContentModeScaleAspectFit;
+    //    [self.outfitImageView setImage:self.album.albumImage];
     // Do any additional setup after loading the view.
 }
 
@@ -36,13 +37,29 @@
 }
 
 /*
-#pragma mark - Navigation
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)segmentedControlAction:(id)sender {
+    if(segmentedControl.selectedSegmentIndex == 0){
+        
+        self.view.backgroundColor = [UIColor redColor];    }
+    
+    else
+        
+        if(segmentedControl.selectedSegmentIndex == 1)
+            
+        {
+            
+            self.view.backgroundColor = [UIColor greenColor];
+            
+        }
+
 }
-*/
-
 @end
