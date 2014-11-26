@@ -33,7 +33,9 @@
     self.pictureView.contentMode = UIViewContentModeScaleAspectFit;
     self.descriptionLabel.text = self.myTreatment.longDescription;
     [self.pictureView setImage:self.myTreatment.picture];
+    self.title = @"Treatment Details";
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 }
 

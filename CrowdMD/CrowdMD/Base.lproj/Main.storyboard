@@ -44,7 +44,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Injury Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trr-gS-XW7">
-                                            <rect key="frame" x="13" y="0.0" width="225" height="21"/>
+                                            <rect key="frame" x="13" y="2" width="225" height="21"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                                         <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="103" placeholderIntrinsicHeight="72" translatesAutoresizingMaskIntoConstraints="NO" id="vVR-p9-6cD">
                                             <rect key="frame" x="176" y="14" width="103" height="72"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Injury Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-hT-khn">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Injury Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-hT-khn">
                                             <rect key="frame" x="13" y="20" width="160" height="72"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -485,10 +485,10 @@
             </objects>
             <point key="canvasLocation" x="1921" y="-1531"/>
         </scene>
-        <!--Treatment Details-->
+        <!--My Treatment Info View Controller-->
         <scene sceneID="AeM-8R-n3J">
             <objects>
-                <viewController title="Treatment Details" id="ADY-xn-Xjh" customClass="MyTreatmentInfoViewController" sceneMemberID="viewController">
+                <viewController id="ADY-xn-Xjh" customClass="MyTreatmentInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Yo-b7-sjD"/>
                         <viewControllerLayoutGuide type="bottom" id="2kh-Ra-BlC"/>
@@ -544,12 +544,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="128" placeholderIntrinsicHeight="69" translatesAutoresizingMaskIntoConstraints="NO" id="tma-g4-sZK">
                                 <rect key="frame" x="176" y="161" width="128" height="69"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdW-ST-XR5">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Treatment Details" id="oPL-Uj-UGJ"/>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Injury Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fv-oU-8Rp">
                                 <rect key="frame" x="21" y="119" width="233" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -717,6 +711,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="su0-fs-5SY"/>
         <segue reference="g7h-Rs-Ky2"/>
-        <segue reference="8VH-vu-wCA"/>
+        <segue reference="r5x-v6-2pa"/>
     </inferredMetricsTieBreakers>
 </document>
