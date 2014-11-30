@@ -61,50 +61,35 @@
     UIImageView* pictureView = (UIImageView *)[cell viewWithTag:3];
     pictureView.image = treatment.picture;
     
-//    UIImageView* starsView = (UIImageView *)[cell viewWithTag:4];
-//    
-//    if(treatment.rating == 0) {
-//        starsView.image = [UIImage imageNamed:@"Stars_0.png"];
-//    } else if(treatment.rating == 1) {
-//        starsView.image = [UIImage imageNamed:@"Stars_1.png"];
-//    } else if(treatment.rating == 2) {
-//        starsView.image = [UIImage imageNamed:@"Stars_2.png"];
-//    } else if(treatment.rating == 3) {
-//        starsView.image = [UIImage imageNamed:@"Stars_3.png"];
-//    } else if(treatment.rating == 4) {
-//        starsView.image = [UIImage imageNamed:@"Stars_4.png"];
-//    } else if(treatment.rating == 5) {
-//        starsView.image = [UIImage imageNamed:@"Stars_5.png"];
-//    }
+    UIImageView* starsView = (UIImageView *)[cell viewWithTag:4];
+    
+    if(treatment.rating == 0) {
+        starsView.image = [UIImage imageNamed:@"Stars_0.png"];
+    } else if(treatment.rating == 1) {
+        starsView.image = [UIImage imageNamed:@"Stars_1.png"];
+    } else if(treatment.rating == 2) {
+        starsView.image = [UIImage imageNamed:@"Stars_2.png"];
+    } else if(treatment.rating == 3) {
+        starsView.image = [UIImage imageNamed:@"Stars_3.png"];
+    } else if(treatment.rating == 4) {
+        starsView.image = [UIImage imageNamed:@"Stars_4.png"];
+    } else if(treatment.rating == 5) {
+        starsView.image = [UIImage imageNamed:@"Stars_5.png"];
+    }
     
     return cell;
 }
+-(id)init {
+    if ( self = [super init] ) {
+       // myArray = nil;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
-    Treatment * treatmentOne = [[Treatment alloc] init];
-    treatmentOne.name = @"Cortisone";
-    treatmentOne.injuryName = @"Tennis Elbow";
-    treatmentOne.shortDescription = @"A shot in the elbow....";
-    treatmentOne.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
-    treatmentOne.longDescription = @"Physical therapy or physiotherapy (sometimes abbreviated to PT) is the health care profession primarily concerned with the remediation of impairments and disabilities and the promotion of mobility, functional ability, quality of life and movement potential through examination, evaluation, diagnosis and physical intervention. ";
-    //treatmentOne.rating = -1;
-    
-    Treatment * treatmentTwo = [[Treatment alloc] init];
-    treatmentTwo.name = @"Phsyical Therapy";
-    treatmentTwo.injuryName = @"Tennis Elbow";
-    treatmentTwo.shortDescription = @"A shot in the elbow....";
-    treatmentTwo.longDescription = @"Physical therapy or physiotherapy (sometimes abbreviated to PT) is the health care profession primarily concerned with the remediation of impairments and disabilities and the promotion of mobility, functional ability, quality of life and movement potential through examination, evaluation, diagnosis and physical intervention. ";
-    treatmentTwo.picture = [UIImage imageNamed:@"elbowPT.jpg"];
-    //treatmentTwo.rating = -1;
-    
-    self.treatments = [NSArray arrayWithObjects:treatmentOne, treatmentTwo, nil];
+
+    self.treatments = self.injury.treatments;
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

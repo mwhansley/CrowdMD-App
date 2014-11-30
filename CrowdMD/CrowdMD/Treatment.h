@@ -16,4 +16,6 @@
 @property (nonatomic,strong)NSString* longDescription;
 @property (nonatomic)NSInteger* rating;
 @property (nonatomic)UIImage* picture;
+
++(NSMutableArray*)treatments;
 @end

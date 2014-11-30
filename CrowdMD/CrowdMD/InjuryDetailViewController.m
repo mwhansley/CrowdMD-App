@@ -7,6 +7,7 @@
 //
 
 #import "InjuryDetailViewController.h"
+#import "TreatmentViewController.h"
 
 @interface InjuryDetailViewController ()
 @property (nonatomic, strong) IBOutlet UILabel* nameLabel;
@@ -23,12 +24,7 @@
     self.descriptionLabel.text = self.injury.longDescription;
     self.pictureView.contentMode = UIViewContentModeScaleAspectFit;
     [self.pictureView setImage:self.injury.picture];
-    //    self.nameLabel.text = self.album.userName;
-    //    self.eventLabel.text = self.album.event;
-    //    self.eventDescriptionLabel.text = self.album.eventDescription;
-    //    self.outfitImageView.contentMode = UIViewContentModeScaleAspectFit;
-    //    [self.outfitImageView setImage:self.album.albumImage];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,16 +44,15 @@
 
 - (IBAction)segmentedControlAction:(id)sender {
     if(segmentedControl.selectedSegmentIndex == 0){
-        
-        self.view.backgroundColor = [UIColor redColor];    }
-    
-    else
-        
-        if(segmentedControl.selectedSegmentIndex == 1)
-            
-        {
-            
-            self.view.backgroundColor = [UIColor greenColor];
+        InjuryDetailViewController *vc1 = [[InjuryDetailViewController alloc] init];
+        [self.navigationController pushViewController:vc1 animated:YES];
+        vc1.injury = self.injury;
+        //self.view.backgroundColor = [UIColor redColor];
+    } else if(segmentedControl.selectedSegmentIndex == 1) {
+        TreatmentViewController *vc2 = [[TreatmentViewController alloc] init];
+        vc2.injury = self.injury;
+        [self.navigationController pushViewController:vc2 animated:YES];
+            //self.view.backgroundColor = [UIColor greenColor];
             
         }
 

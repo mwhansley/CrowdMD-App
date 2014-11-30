@@ -162,7 +162,6 @@
                                 </segments>
                                 <connections>
                                     <action selector="segmentedControlAction:" destination="I3p-dH-bbg" eventType="valueChanged" id="vM1-bE-Sll"/>
-                                    <segue destination="SVi-Uk-oCR" kind="push" id="5id-13-zpE"/>
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AxW-yj-r89">
@@ -230,7 +229,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stars_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="teq-zD-XEh">
+                                                <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stars_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="teq-zD-XEh">
                                                     <rect key="frame" x="8" y="56" width="94" height="16"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Short Descript." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4g-L3-x6x">
@@ -711,8 +710,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KML-gH-oaR"/>
-        <segue reference="g7h-Rs-Ky2"/>
         <segue reference="r5x-v6-2pa"/>
+        <segue reference="g7h-Rs-Ky2"/>
     </inferredMetricsTieBreakers>
 </document>

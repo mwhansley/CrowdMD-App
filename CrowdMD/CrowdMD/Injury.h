@@ -16,5 +16,5 @@
 @property (nonatomic, strong) NSString* longDescription;
 @property (nonatomic)UIImage* picture;
 
-//+(NSMutableArray*)injuries;
++(NSMutableArray*)injuries;
 @end

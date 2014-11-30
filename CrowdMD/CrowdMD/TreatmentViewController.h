@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "StarRatingControl.h"
+#import "Injury.h"
 
 @interface TreatmentViewController : UIViewController
-@property (weak) IBOutlet UILabel *ratingLabel;
-@property (weak) IBOutlet StarRatingControl *starRatingControl;
+@property (nonatomic,strong) Injury* injury;
 @end

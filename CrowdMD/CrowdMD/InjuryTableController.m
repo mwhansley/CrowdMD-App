@@ -17,7 +17,7 @@
 
 @implementation InjuryTableController
 {
-    NSArray *injuries;
+    NSMutableArray *injuries;
     NSArray *searchResults;
 }
 
@@ -86,19 +86,19 @@
 
 
 - (void)viewDidLoad {
-    Injury * injuryOne = [[Injury alloc] init];
-    injuryOne.name = @"Tennis Elbow";
-    injuryOne.shortDescription = @"An overuse injury in the elbow that feels sharp and focused";
-    injuryOne.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
-    injuryOne.longDescription = @"Physical therapy or physiotherapy (sometimes abbreviated to PT) is the health care profession primarily concerned with the remediation of impairments and disabilities and the promotion of mobility, functional ability, quality of life and movement potential through examination, evaluation, diagnosis and physical intervention. ";
+//    Injury * injuryOne = [[Injury alloc] init];
+//    injuryOne.name = @"Tennis Elbow";
+//    injuryOne.shortDescription = @"An overuse injury in the elbow that feels sharp and focused";
+//    injuryOne.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
+//    injuryOne.longDescription = @"Physical therapy or physiotherapy (sometimes abbreviated to PT) is the health care profession primarily concerned with the remediation of impairments and disabilities and the promotion of mobility, functional ability, quality of life and movement potential through examination, evaluation, diagnosis and physical intervention. ";
+//    
+//    Injury * injuryTwo = [[Injury alloc] init];
+//    injuryTwo.name = @"Elbow Soreness";
+//    injuryTwo.shortDescription = @"An overuse injury in the elbow that feels sharp and focused";
+//    injuryTwo.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
+//    injuryTwo.longDescription = @"Physical therapy or physiotherapy (sometimes abbreviated to PT) is the health care profession primarily concerned with the remediation of impairments and disabilities and the promotion of mobility, functional ability, quality of life and movement potential through examination, evaluation, diagnosis and physical intervention. ";
     
-    Injury * injuryTwo = [[Injury alloc] init];
-    injuryTwo.name = @"Elbow Soreness";
-    injuryTwo.shortDescription = @"An overuse injury in the elbow that feels sharp and focused";
-    injuryTwo.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
-    injuryTwo.longDescription = @"Physical therapy or physiotherapy (sometimes abbreviated to PT) is the health care profession primarily concerned with the remediation of impairments and disabilities and the promotion of mobility, functional ability, quality of life and movement potential through examination, evaluation, diagnosis and physical intervention. ";
-    
-    injuries = [NSArray arrayWithObjects:injuryOne, injuryTwo, nil];
+    injuries = [Injury injuries];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
