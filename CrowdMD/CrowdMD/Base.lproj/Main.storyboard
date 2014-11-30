@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -162,6 +162,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="segmentedControlAction:" destination="I3p-dH-bbg" eventType="valueChanged" id="vM1-bE-Sll"/>
+                                    <segue destination="SVi-Uk-oCR" kind="push" id="5id-13-zpE"/>
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AxW-yj-r89">
@@ -245,7 +246,7 @@
                                             <outlet property="pictureView" destination="Hbg-pF-eXB" id="J8e-cL-bR3"/>
                                             <outlet property="shortDescription" destination="o4g-L3-x6x" id="clh-6P-fsd"/>
                                             <outlet property="stars" destination="teq-zD-XEh" id="niF-m7-Tjv"/>
-                                            <segue destination="7YQ-jB-uyR" kind="presentation" id="HYN-Ja-Uvz"/>
+                                            <segue destination="7YQ-jB-uyR" kind="push" id="HYN-Ja-Uvz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -295,7 +296,7 @@
                                                 <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="96" placeholderIntrinsicHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="3F5-6g-W1o">
                                                     <rect key="frame" x="197" y="5" width="82" height="56"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stars_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="LZh-xf-pm3">
+                                                <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZh-xf-pm3">
                                                     <rect key="frame" x="8" y="42" width="94" height="16"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Treatment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edu-WK-U9b">
@@ -663,7 +664,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SVi-Uk-oCR" kind="custom" customClass="DismissSegue" id="KML-gH-oaR"/>
+                                    <segue destination="SVi-Uk-oCR" kind="custom" identifier="AddToTreatments" customClass="DismissSegue" id="KML-gH-oaR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jah-9j-pyw">
@@ -710,6 +711,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="KML-gH-oaR"/>
         <segue reference="g7h-Rs-Ky2"/>
         <segue reference="r5x-v6-2pa"/>
     </inferredMetricsTieBreakers>

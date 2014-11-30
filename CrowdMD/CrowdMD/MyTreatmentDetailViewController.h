@@ -12,6 +12,7 @@
 
 @interface MyTreatmentDetailViewController : UIViewController  <StarRatingDelegate>
 @property (nonatomic,strong) MyTreatment* myTreatment;
+@property (nonatomic) NSInteger treatmentIndex;
 @property (weak) IBOutlet StarRatingControl *starRatingControl;
 @property (weak) IBOutlet UILabel *ratingLabel;
 

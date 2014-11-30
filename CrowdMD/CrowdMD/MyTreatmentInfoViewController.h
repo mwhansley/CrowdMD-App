@@ -11,4 +11,5 @@
 
 @interface MyTreatmentInfoViewController : UIViewController
 @property (nonatomic,strong) MyTreatment* myTreatment;
+@property (nonatomic) NSInteger treatmentIndex;
 @end

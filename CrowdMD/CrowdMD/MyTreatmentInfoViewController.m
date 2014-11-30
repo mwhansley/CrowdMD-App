@@ -24,7 +24,9 @@
 
     MyTreatmentDetailViewController* detail = segue.destinationViewController;
     MyTreatment* myTreatment = self.myTreatment;
+    NSInteger treatmentIndex = self.treatmentIndex;
     detail.myTreatment = myTreatment;
+    detail.treatmentIndex = treatmentIndex;
 }
 
 - (void)viewDidLoad {

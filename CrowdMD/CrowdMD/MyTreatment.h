@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+
 @interface MyTreatment : NSObject
 @property (nonatomic,strong)NSString* treatment;
 @property (nonatomic,strong)NSString* injury;
@@ -17,4 +18,6 @@
 @property (nonatomic)NSUInteger rating;
 @property (nonatomic)UIImage* picture;
 @property (nonatomic)Boolean rated;
+
++(NSMutableArray*)myTreatments;
 @end

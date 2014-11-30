@@ -15,4 +15,6 @@
 @property (strong) NSArray* treatments;
 @property (nonatomic, strong) NSString* longDescription;
 @property (nonatomic)UIImage* picture;
+
+//+(NSMutableArray*)injuries;
 @end

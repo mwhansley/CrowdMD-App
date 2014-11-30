@@ -13,7 +13,7 @@
 #import "MyTreatmentInfoViewController.h"
 
 @interface MyTreatmentViewController () <UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, strong) NSArray* treatments;
+@property (nonatomic, strong) NSMutableArray* treatments;
 @property (nonatomic, strong) IBOutlet UITableView* tableView;
 @end
 
@@ -25,6 +25,7 @@
     MyTreatmentInfoViewController* info = segue.destinationViewController;
     MyTreatment* myTreatment = self.treatments[indexPath.row];
     info.myTreatment = myTreatment;
+    info.treatmentIndex = indexPath.row;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -33,6 +34,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    self.treatments = [MyTreatment myTreatments];
     static NSString *CellIdentifier = @"MyTreatmentCell";
     MyTreatmentTableCell *cell = (MyTreatmentTableCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
@@ -53,16 +55,16 @@
     
     UIImageView* starsView = (UIImageView *)[cell viewWithTag:4];
     
-    if(treatment.rating == 0) {
+    if(treatment.rating == -1) {
         starsView.image = [UIImage imageNamed:@"Stars_0.png"];
     } else if(treatment.rating == 1) {
-        starsView.image = [UIImage imageNamed:@"Stars_1.png"];
+        starsView.image = [UIImage imageNamed:@"Stars_1.jpg"];
     } else if(treatment.rating == 2) {
-        starsView.image = [UIImage imageNamed:@"Stars_2.png"];
+        starsView.image = [UIImage imageNamed:@"Stars_2"];
     } else if(treatment.rating == 3) {
-        starsView.image = [UIImage imageNamed:@"Stars_3.png"];
+        starsView.image = [UIImage imageNamed:@"Stars_3"];
     } else if(treatment.rating == 4) {
-        starsView.image = [UIImage imageNamed:@"Stars_4.png"];
+        starsView.image = [UIImage imageNamed:@"Stars_4"];
     } else if(treatment.rating == 5) {
         starsView.image = [UIImage imageNamed:@"Stars_5.png"];
     }
@@ -70,22 +72,27 @@
     return cell;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData]; // to reload selected cell
+}
+
 - (void)viewDidLoad {
-    MyTreatment * treatmentOne = [[MyTreatment alloc] init];
-    treatmentOne.treatment = @"Cortisone";
-    treatmentOne.injury = @"Tennis Elbow";
-    treatmentOne.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
-    treatmentOne.longDescription = @"Physical therapy or physiotherapy (sometimes abbreviated to PT) is the health care profession primarily concerned with the remediation of impairments and disabilities and the promotion of mobility, functional ability, quality of life and movement potential through examination, evaluation, diagnosis and physical intervention. ";
-    treatmentOne.rating = -1;
-    
-    MyTreatment * treatmentTwo = [[MyTreatment alloc] init];
-    treatmentTwo.treatment = @"Physical Therapy";
-    treatmentTwo.injury = @"Tennis Elbow";
-    treatmentTwo.picture = [UIImage imageNamed:@"elbowPT.jpg"];
-    treatmentOne.longDescription = @"Physical therapy or physiotherapy (sometimes abbreviated to PT) is the health care profession primarily concerned with the remediation of impairments and disabilities and the promotion of mobility, functional ability, quality of life and movement potential through examination, evaluation, diagnosis and physical intervention. ";
-    treatmentTwo.rating = -1;
-    
-    self.treatments = [NSArray arrayWithObjects:treatmentOne, treatmentTwo, nil];
+//    MyTreatment * treatmentOne = [[MyTreatment alloc] init];
+//    treatmentOne.treatment = @"Cortisone";
+//    treatmentOne.injury = @"Tennis Elbow";
+//    treatmentOne.picture = [UIImage imageNamed:@"elbowCortisone.jpg"];
+//    treatmentOne.longDescription = @"Physical therapy or physiotherapy (sometimes abbreviated to PT) is the health care profession primarily concerned with the remediation of impairments and disabilities and the promotion of mobility, functional ability, quality of life and movement potential through examination, evaluation, diagnosis and physical intervention. ";
+//    treatmentOne.rating = -1;
+//    
+//    MyTreatment * treatmentTwo = [[MyTreatment alloc] init];
+//    treatmentTwo.treatment = @"Physical Therapy";
+//    treatmentTwo.injury = @"Tennis Elbow";
+//    treatmentTwo.picture = [UIImage imageNamed:@"elbowPT.jpg"];
+//    treatmentOne.longDescription = @"Physical therapy or physiotherapy (sometimes abbreviated to PT) is the health care profession primarily concerned with the remediation of impairments and disabilities and the promotion of mobility, functional ability, quality of life and movement potential through examination, evaluation, diagnosis and physical intervention. ";
+//    treatmentTwo.rating = -1;
+
+    self.treatments = [MyTreatment myTreatments];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
