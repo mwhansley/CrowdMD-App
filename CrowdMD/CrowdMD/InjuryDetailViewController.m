@@ -45,13 +45,17 @@
 - (IBAction)segmentedControlAction:(id)sender {
     if(segmentedControl.selectedSegmentIndex == 0){
         InjuryDetailViewController *vc1 = [[InjuryDetailViewController alloc] init];
-        [self.navigationController pushViewController:vc1 animated:YES];
         vc1.injury = self.injury;
+        [self presentViewController:vc1 animated:YES completion:nil];
+        //[self.navigationController pushViewController:vc1 animated:YES];
+        
         //self.view.backgroundColor = [UIColor redColor];
     } else if(segmentedControl.selectedSegmentIndex == 1) {
         TreatmentViewController *vc2 = [[TreatmentViewController alloc] init];
         vc2.injury = self.injury;
-        [self.navigationController pushViewController:vc2 animated:YES];
+        [self presentViewController:vc2 animated:YES completion:nil];
+//        [self.navigationController popViewControllerAnimated:true];
+//        [self.navigationController pushViewController:vc2 animated:YES];
             //self.view.backgroundColor = [UIColor greenColor];
             
         }

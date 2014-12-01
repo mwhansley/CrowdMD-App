@@ -12,7 +12,7 @@
 #import "TreatmentInfoViewController.h"
 
 @interface TreatmentViewController () <UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, strong) NSArray* treatments;
+@property (nonatomic, strong) NSMutableArray* treatments;
 @property (nonatomic, strong) IBOutlet UITableView* tableView;
 @end
 
@@ -80,15 +80,13 @@
     return cell;
 }
 -(id)init {
-    if ( self = [super init] ) {
-       // myArray = nil;
-    }
+    self = [super init];
     return self;
 }
 
 - (void)viewDidLoad {
-
-    self.treatments = self.injury.treatments;
+    self.treatments = [[NSMutableArray alloc] init];
+    [self.treatments addObjectsFromArray:self.injury.treatments];
     [super viewDidLoad];
 }
 - (void)didReceiveMemoryWarning {
