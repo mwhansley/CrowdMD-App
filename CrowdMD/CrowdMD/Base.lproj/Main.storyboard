@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="1087" y="1047"/>
         </scene>
-        <!--Injury Details-->
+        <!--InjuryDetails-->
         <scene sceneID="yXC-5M-kh2">
             <objects>
-                <viewController id="I3p-dH-bbg" customClass="InjuryDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InjuryDetails" title="InjuryDetails" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I3p-dH-bbg" customClass="InjuryDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hRv-L7-b1P"/>
                         <viewControllerLayoutGuide type="bottom" id="mgi-ab-Ngd"/>
@@ -162,6 +162,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="segmentedControlAction:" destination="I3p-dH-bbg" eventType="valueChanged" id="vM1-bE-Sll"/>
+                                    <segue destination="SVi-Uk-oCR" kind="push" id="9bX-AK-zDw"/>
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AxW-yj-r89">
@@ -195,7 +196,7 @@
         <!--Suggested Treatments-->
         <scene sceneID="0jd-ly-NMo">
             <objects>
-                <viewController title="Suggested Treatments" id="SVi-Uk-oCR" customClass="TreatmentViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SuggestedTreatments" title="Suggested Treatments" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SVi-Uk-oCR" customClass="TreatmentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J3I-Xh-CqV"/>
                         <viewControllerLayoutGuide type="bottom" id="E3M-s2-eEZ"/>
@@ -710,6 +711,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="9bX-AK-zDw"/>
         <segue reference="r5x-v6-2pa"/>
         <segue reference="g7h-Rs-Ky2"/>
     </inferredMetricsTieBreakers>

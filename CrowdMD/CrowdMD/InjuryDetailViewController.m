@@ -44,18 +44,30 @@
 
 - (IBAction)segmentedControlAction:(id)sender {
     if(segmentedControl.selectedSegmentIndex == 0){
-        InjuryDetailViewController *vc1 = [[InjuryDetailViewController alloc] init];
-        vc1.injury = self.injury;
-        [self presentViewController:vc1 animated:YES completion:nil];
-        //[self.navigationController pushViewController:vc1 animated:YES];
+        NSString * viewControllerID = @"InjuryDetails";
+        UIStoryboard * storyboard = self.storyboard;
+        InjuryDetailViewController * controller = (InjuryDetailViewController *)[storyboard instantiateViewControllerWithIdentifier:viewControllerID];
+       // [self presentViewController:controller animated:YES completion:nil];
+        
+        
+//        InjuryDetailViewController *vc1 = [[InjuryDetailViewController alloc] init];
+//        vc1.injury = self.injury;
+//        [self presentViewController:vc1 animated:YES completion:nil];
+        [self.navigationController pushViewController:controller animated:YES];
         
         //self.view.backgroundColor = [UIColor redColor];
     } else if(segmentedControl.selectedSegmentIndex == 1) {
-        TreatmentViewController *vc2 = [[TreatmentViewController alloc] init];
-        vc2.injury = self.injury;
-        [self presentViewController:vc2 animated:YES completion:nil];
+        NSString * viewControllerID = @"SuggestedTreatments";
+        UIStoryboard * storyboard = self.storyboard;
+        TreatmentViewController * controller = (TreatmentViewController *)[storyboard instantiateViewControllerWithIdentifier:viewControllerID];
+        [self presentViewController:controller animated:YES completion:nil];
+        
+        
+//        TreatmentViewController *vc2 = [[TreatmentViewController alloc] init];
+//        vc2.injury = self.injury;
+//        [self presentViewController:vc2 animated:YES completion:nil];
 //        [self.navigationController popViewControllerAnimated:true];
-//        [self.navigationController pushViewController:vc2 animated:YES];
+        [self.navigationController pushViewController:controller animated:YES];
             //self.view.backgroundColor = [UIColor greenColor];
             
         }
