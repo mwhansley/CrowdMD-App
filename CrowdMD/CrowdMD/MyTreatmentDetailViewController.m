@@ -40,6 +40,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (void)starRatingControl:(StarRatingControl *)control didUpdateRating:(NSUInteger)rating {
   //  self.myTreatment.rating = rating;
     NSMutableArray* myTreatments = [MyTreatment myTreatments];

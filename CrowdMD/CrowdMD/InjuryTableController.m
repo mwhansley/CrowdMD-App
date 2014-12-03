@@ -10,6 +10,7 @@
 #import "InjuryTableCell.h"
 #import "Injury.h"
 #import "InjuryDetailViewController.h"
+#import "SegControlViewController.h"
 
 @interface InjuryTableController ()
 
@@ -79,7 +80,7 @@
             injury = [injuries objectAtIndex:indexPath.row];
         }
         
-        InjuryDetailViewController *destViewController = segue.destinationViewController;
+        SegControlViewController *destViewController = segue.destinationViewController;
         destViewController.injury = injury;
     }
 }

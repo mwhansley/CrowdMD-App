@@ -11,7 +11,7 @@
 
 @interface InjuryDetailViewController : UIViewController
 @property (nonatomic, strong) Injury* injury;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
-- (IBAction)segmentedControlAction:(id)sender;
+@property (nonatomic) IBOutlet UIView * vcview;
+//@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @end

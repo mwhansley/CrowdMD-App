@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		722677461A2E6AB800F0EAA2 /* SegControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722677451A2E6AB800F0EAA2 /* SegControlViewController.m */; };
 		7229A67C1A15CE4C0027E510 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A67B1A15CE4C0027E510 /* main.m */; };
 		7229A67F1A15CE4C0027E510 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A67E1A15CE4C0027E510 /* AppDelegate.m */; };
 		7229A6821A15CE4C0027E510 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7229A6811A15CE4C0027E510 /* FirstViewController.m */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		722677441A2E6AB700F0EAA2 /* SegControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegControlViewController.h; sourceTree = "<group>"; };
+		722677451A2E6AB800F0EAA2 /* SegControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegControlViewController.m; sourceTree = "<group>"; };
 		7229A6761A15CE4C0027E510 /* CrowdMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7229A67A1A15CE4C0027E510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7229A67B1A15CE4C0027E510 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 				7229A6A91A15D78F0027E510 /* InjuryTableController.m */,
 				7229A6A21A15D1E50027E510 /* InjuryTableCell.h */,
 				7229A6A31A15D1E50027E510 /* InjuryTableCell.m */,
+				722677441A2E6AB700F0EAA2 /* SegControlViewController.h */,
+				722677451A2E6AB800F0EAA2 /* SegControlViewController.m */,
 			);
 			name = Injury;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 				72FFC5CC1A1D80D500657B36 /* TFAppDelegate.m in Sources */,
 				725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */,
 				72FFC5CD1A1D80D500657B36 /* TFViewController.m in Sources */,
+				722677461A2E6AB800F0EAA2 /* SegControlViewController.m in Sources */,
 				7229A6851A15CE4C0027E510 /* SecondViewController.m in Sources */,
 				725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */,
 				72FFC5CB1A1D80D500657B36 /* StarRatingControl.m in Sources */,

@@ -12,4 +12,5 @@
 
 @interface TreatmentViewController : UIViewController
 @property (nonatomic,strong) Injury* injury;
+@property (nonatomic) IBOutlet UIView* vcview;
 @end
