@@ -37,7 +37,7 @@
         InjuryDetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"InjuryDetails"];
         vc.injury = self.injury;
         [self addChildViewController:vc];
-        [self transitionFromViewController:self.currentViewController toViewController:vc duration:0.5 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
+        [self transitionFromViewController:self.currentViewController toViewController:vc duration:0.5 options:UIViewAnimationOptionTransitionNone animations:^{
             [self.currentViewController.view removeFromSuperview];
             vc.view.frame = self.contentView.bounds;
             [self.contentView addSubview:vc.vcview];
@@ -51,7 +51,7 @@
         TreatmentViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"SuggestedTreatments"];
         vc.injury = self.injury;
         [self addChildViewController:vc];
-        [self transitionFromViewController:self.currentViewController toViewController:vc duration:0.5 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
+        [self transitionFromViewController:self.currentViewController toViewController:vc duration:0.5 options:UIViewAnimationOptionTransitionNone animations:^{
             [self.currentViewController.view removeFromSuperview];
             vc.view.frame = self.contentView.bounds;
             [self.contentView addSubview:vc.vcview];
