@@ -19,13 +19,11 @@
 @implementation SegControlViewController
 
 - (void)viewDidLoad {
-    NSLog(@"Storyboard: %@", self.storyboard);
 
     InjuryDetailViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"InjuryDetails"];
     vc.injury = self.injury;
     [self addChildViewController:vc];
-        
-    NSLog(@"View: %@", vc.vcview);
+    
     self.currentViewController = vc;
     vc.view.frame = self.contentView.bounds;
     [self.contentView addSubview:vc.vcview];

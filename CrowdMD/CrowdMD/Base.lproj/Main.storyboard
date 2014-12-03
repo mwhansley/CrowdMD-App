@@ -297,10 +297,10 @@
             </objects>
             <point key="canvasLocation" x="1489" y="451"/>
         </scene>
-        <!--InjuryDetails-->
+        <!--Injury Details-->
         <scene sceneID="yXC-5M-kh2">
             <objects>
-                <viewController storyboardIdentifier="InjuryDetails" title="InjuryDetails" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I3p-dH-bbg" customClass="InjuryDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InjuryDetails" title="Injury Details" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I3p-dH-bbg" customClass="InjuryDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hRv-L7-b1P"/>
                         <viewControllerLayoutGuide type="bottom" id="mgi-ab-Ngd"/>
