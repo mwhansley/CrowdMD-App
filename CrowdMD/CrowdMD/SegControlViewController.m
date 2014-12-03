@@ -27,6 +27,7 @@
     self.currentViewController = vc;
     vc.view.frame = self.contentView.bounds;
     [self.contentView addSubview:vc.vcview];
+    self.navigationItem.title = vc.title;
     [super viewDidLoad];
 
 }

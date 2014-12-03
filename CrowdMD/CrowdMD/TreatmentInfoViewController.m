@@ -7,6 +7,7 @@
 //
 
 #import "TreatmentInfoViewController.h"
+#import "MyTreatment.h"
 
 @interface TreatmentInfoViewController ()
 @property (nonatomic, strong) IBOutlet UILabel* nameLabel;
@@ -16,7 +17,19 @@
 @end
 
 @implementation TreatmentInfoViewController
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"AddToMyTreatments"]) {
+        NSMutableArray * treatments = [MyTreatment myTreatments];
+        MyTreatment * new = [[MyTreatment alloc] init];
+        new.treatment = self.treatment.name;
+        new.injury = self.treatment.injuryName;
+        new.picture = self.treatment.picture;
+        new.longDescription = self.treatment.longDescription;
+        new.rating = -1;
 
+        [treatments addObject:new];
+    }
+}
 - (void)viewDidLoad {
     self.injuryLabel.text = self.treatment.injuryName;
     self.nameLabel.text = self.treatment.name;

@@ -14,7 +14,7 @@
 @property (nonatomic,strong)NSString* injuryName;
 @property (nonatomic,strong)NSString* shortDescription;
 @property (nonatomic,strong)NSString* longDescription;
-@property (nonatomic)NSInteger* rating;
+@property (nonatomic)NSUInteger rating;
 @property (nonatomic)UIImage* picture;
 
 +(NSMutableArray*)treatments;
