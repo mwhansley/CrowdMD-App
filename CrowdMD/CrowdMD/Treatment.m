@@ -120,7 +120,7 @@
         
         Treatment * treatmentThirteen = [[Treatment alloc] init];
         treatmentThirteen.name = @"Anti-Inflammatories";
-        treatmentThirteen.injuryName = @"Tennis elbow (epicondylitis)";
+        treatmentThirteen.injuryName = @"Tennis elbow";
         treatmentThirteen.shortDescription = @"An anti-inflammatory will help reduce swelling and inflammation.";
         treatmentThirteen.longDescription = @"Take anti-inflammatory painkillers. Non-steroidal anti-inflammatory drugs (NSAIDs), like Advil, Aleve, or Motrin, will help with pain and swelling. However, studies show their effects are controversial especially if taken long term.  Additionally, these drugs can have side effects; they should be used only occasionally, unless your doctor specifically says otherwise";
         treatmentThirteen.picture = [UIImage imageNamed:@"antiInflammatory.jpg"];
