@@ -10,7 +10,8 @@
 #import "InjurySuggestionsTableController.h"
 
 @interface PainDescriptionViewController ()
-
+@property (nonatomic) int lastStep;
+@property (nonatomic) int stepValue;
 @end
 
 @implementation PainDescriptionViewController
@@ -24,11 +25,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.slider.minimumValue = 20;
+    self.slider.maximumValue = 100;
+    self.stepValue = 20.0f;
+    self.lastStep = (self.slider.value) / self.stepValue;
+    self.label.text = @"Painful";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)sliderValueChanged:(id)sender {
+    float newStep = roundf((self.slider.value) / self.stepValue);
+    self.slider.value = newStep * self.stepValue;
+    
+    if(self.slider.value == 20) {
+        self.label.text = @"Not Painful";
+    }
+    if(self.slider.value == 40) {
+        self.label.text = @"A Little Painful";
+    }
+    if(self.slider.value == 60) {
+        self.label.text = @"Painful";
+    }
+    if(self.slider.value == 80) {
+        self.label.text = @"Very Painful";
+    }
+    if(self.slider.value == 100) {
+        self.label.text = @"Extremely Painful";
+    }
+
+    
+    // Set the label text to the value of the slider as it changes
+    //self.label.text = [NSString stringWithFormat:@"%f", self.slider.value];
 }
 
 /*

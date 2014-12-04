@@ -10,4 +10,6 @@
 
 @interface PainDescriptionViewController : UIViewController
 @property NSMutableArray *injuries;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 @end

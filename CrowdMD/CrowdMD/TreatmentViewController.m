@@ -24,6 +24,7 @@
     TreatmentInfoViewController* info = segue.destinationViewController;
     Treatment* treatment = self.treatments[indexPath.row];
     info.treatment = treatment;
+    info.injury = self.injury;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

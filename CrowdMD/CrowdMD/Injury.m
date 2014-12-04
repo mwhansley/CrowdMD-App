@@ -38,7 +38,7 @@
         injuryThree.treatments =  [[NSMutableArray alloc] initWithObjects:[treatments objectAtIndex:6],[treatments objectAtIndex:7],[treatments objectAtIndex:8],nil];
         
         Injury * injuryFour = [[Injury alloc] init];
-        injuryFour.name = @"Knee Ligament ACL Injury";
+        injuryFour.name = @"Knee ACL Injury";
         injuryFour.shortDescription = @"Ligament injuries in the knee - such as an anterior cruciate ligament (ACL) -- are dreaded by professional and amateur athletes alike";
         injuryFour.longDescription = @"The anterior cruciate ligament (ACL) is one of the two major ligaments in the knee. It connects the thigh bone to the shin bone in the knee. ACL injuries are a common cause of disability in the knee. In the U.S., 95,000 people get them every year. They are more common in women than men. An ACL injury -- or other ligament injury -- is sometimes hard to diagnose. Symptoms of a knee ligament injury are: Pain, often sudden and severe, A loud pop or snap during the injury, Swelling, A feeling of looseness in the joint, Inability to put weight on the point without pain";
         injuryFour.picture = [UIImage imageNamed:@"aclTear.jpg"];
@@ -59,7 +59,7 @@
         injurySix.treatments =  [[NSMutableArray alloc] initWithObjects:[treatments objectAtIndex:15],[treatments objectAtIndex:16],[treatments objectAtIndex:17],nil];
         
         Injury * injurySeven = [[Injury alloc] init];
-        injurySeven.name = @"Toe and Forefoot Fractures";
+        injurySeven.name = @"Toe/Foot Fractures";
         injurySeven.shortDescription = @"A broken (fractured) bone in your forefoot (metatarsals) or in one of your toes (phalanges) is often painful but rarely disabling.";
         injurySeven.longDescription = @"A fracture is a break in the bone. Fractures can be divided into two categories: traumatic fractures and stress fractures. Traumatic fractures (also called acute fractures) are caused by a direct blow or impact Stress fractures are tiny, hairline breaks that are usually caused by repetitive stress. Pain, swelling, and sometimes bruising are the most common signs of a fracture in the foot. If you have a broken toe, you may be able to walk, but this usually aggravates the pain. If the pain, swelling, and discoloration continue for more than two or three days, or if pain interferes with walking, something could be seriously wrong; see a doctor as soon as possible.";
         injurySeven.picture = [UIImage imageNamed:@"toeFracture.jpg"];

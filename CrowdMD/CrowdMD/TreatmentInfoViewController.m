@@ -8,6 +8,7 @@
 
 #import "TreatmentInfoViewController.h"
 #import "MyTreatment.h"
+#import "TreatmentViewController.h"
 
 @interface TreatmentInfoViewController ()
 @property (nonatomic, strong) IBOutlet UILabel* nameLabel;
@@ -28,6 +29,9 @@
         new.rating = -1;
 
         [treatments addObject:new];
+        
+        TreatmentViewController* treatmentList = segue.destinationViewController;
+        treatmentList.injury = self.injury;
     }
 }
 - (void)viewDidLoad {
