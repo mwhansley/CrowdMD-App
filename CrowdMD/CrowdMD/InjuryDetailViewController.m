@@ -27,6 +27,7 @@
 }
 -(id)init {
     self = [super init];
+    [self.descriptionLabel sizeToFit];
     return self;
 }
 
