@@ -867,7 +867,7 @@
         <scene sceneID="Pb6-2e-6pk">
             <objects>
                 <navigationController id="qA1-hA-njI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Body Search" image="icon_7969 copy" selectedImage="icon_7969" id="F1P-Uz-gHr"/>
+                    <tabBarItem key="tabBarItem" title="Body Search" image="icon_7969 copy" id="F1P-Uz-gHr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8uK-Vh-pUO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -932,7 +932,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SVi-Uk-oCR" kind="custom" identifier="AddToMyTreatments" customClass="DismissSegue" id="KML-gH-oaR"/>
+                                    <segue destination="SVi-Uk-oCR" kind="push" identifier="AddToMyTreatments" id="KML-gH-oaR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Injury Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANh-GM-II8">
@@ -1161,7 +1161,6 @@
         <image name="Stars_0.png" width="460" height="80"/>
         <image name="arm" width="732" height="1223"/>
         <image name="body-1" width="2597" height="3038"/>
-        <image name="icon_7969" width="76" height="129"/>
         <image name="icon_7969 copy" width="25" height="25"/>
         <image name="icon_8204 copy-1" width="25" height="25"/>
         <image name="leg" width="497" height="1583"/>
@@ -1171,10 +1170,10 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wbn-CZ-haH"/>
+        <segue reference="t9H-M8-QlR"/>
+        <segue reference="r5x-v6-2pa"/>
         <segue reference="5Ue-g0-ug9"/>
         <segue reference="UZk-xb-xT0"/>
         <segue reference="n1d-Vz-sro"/>
-        <segue reference="g7h-Rs-Ky2"/>
-        <segue reference="r5x-v6-2pa"/>
     </inferredMetricsTieBreakers>
 </document>

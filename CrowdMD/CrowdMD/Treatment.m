@@ -88,7 +88,7 @@
         
         Treatment * treatmentNine = [[Treatment alloc] init];
         treatmentNine.name = @"Rest";
-        treatmentNine.injuryName = @"Knee Ligament ACL Injury";
+        treatmentNine.injuryName = @"Knee ACL Injury";
         treatmentNine.shortDescription = @"Avoid putting excess weight on your knee to allow the tear to heal.";
         treatmentNine.longDescription = @"Small tears in the ACL may just require several months of rest in order to strengthen the surrounding muscles, the hamstring and the quadriceps, so that these muscles can compensate for the torn ligament. You may need to use crutches for a time to allow the tear to heal.";
         treatmentNine.picture = [UIImage imageNamed:@"restAcl.jpg"];
@@ -96,7 +96,7 @@
         
         Treatment * treatmentTen = [[Treatment alloc] init];
         treatmentTen.name = @"Ice";
-        treatmentTen.injuryName = @"Knee Ligament ACL Injury";
+        treatmentTen.injuryName = @"Knee ACL Injury";
         treatmentTen.shortDescription = @"Ice your knee to reduce pain and swelling.";
         treatmentTen.longDescription = @"Ice your knee to reduce pain and swelling. Apply an ice pack for 20-30 minutes every 3 to 4 hours for 2 to 3 days, or until the pain is gone. Wait atleast 40 minutes before icing again.";
         treatmentTen.picture = [UIImage imageNamed:@"iceAcl.jpg"];
@@ -104,7 +104,7 @@
         
         Treatment * treatmentEleven = [[Treatment alloc] init];
         treatmentEleven.name = @"Compression";
-        treatmentEleven.injuryName = @"Knee Ligament ACL Injury";
+        treatmentEleven.injuryName = @"Knee ACL Injury";
         treatmentEleven.shortDescription = @"Compress the knee to decrease swelling and reduce pain.";
         treatmentEleven.longDescription = @"Compressing your knee will restrict the movement on the knee and prevent it from being overexerted. Use an elastic bandage, straps, or sleeves on your knee to control the swelling.";
         treatmentEleven.picture = [UIImage imageNamed:@"compressAcl.jpg"];
@@ -112,7 +112,7 @@
         
         Treatment * treatmentTwelve = [[Treatment alloc] init];
         treatmentTwelve.name = @"Rest";
-        treatmentTwelve.injuryName = @"Tennis elbow (epicondylitis)";
+        treatmentTwelve.injuryName = @"Tennis elbow";
         treatmentTwelve.shortDescription = @"Rest and avoid any activity that causes pain.";
         treatmentTwelve.longDescription = @"Stopping or changing activities that irritate the elbow are vital while pain is still present. Depending on how severe your condition is, you may need to rest your tendon for weeks to months.";
         treatmentTwelve.picture = [UIImage imageNamed:@"restElbow.jpg"];
@@ -128,7 +128,7 @@
         
         Treatment * treatmentFourteen = [[Treatment alloc] init];
         treatmentFourteen.name = @"Ice";
-        treatmentFourteen.injuryName = @"Tennis elbow (epicondylitis)";
+        treatmentFourteen.injuryName = @"Tennis elbow";
         treatmentFourteen.shortDescription = @"Ice your elbow to reduce pain and swelling.";
         treatmentFourteen.longDescription = @"Ice your elbow to reduce pain and swelling. Apply an ice pack for 20-30 minutes every 3 to 4 hours for 2 to 3 days, or until the pain is gone. Wait atleast 40 minutes before icing again.";
         treatmentFourteen.picture = [UIImage imageNamed:@"iceElbow.jpg"];
@@ -160,7 +160,7 @@
         
         Treatment * treatmentEighteen = [[Treatment alloc] init];
         treatmentEighteen.name = @"Rigid or stiff-soled shoe.";
-        treatmentEighteen.injuryName = @"Toe and Forefoot Fractures";
+        treatmentEighteen.injuryName = @"Toe/Foot Fractures";
         treatmentEighteen.shortDescription = @"Wearing a stiff-soled shoe keeps it properly positioned.";
         treatmentEighteen.longDescription = @"Wearing a stiff-soled shoe protects the toe and helps keep it properly positioned.";
         treatmentEighteen.picture = [UIImage imageNamed:@"shoeToe.jpg"];
@@ -168,7 +168,7 @@
         
         Treatment * treatmentNineteen = [[Treatment alloc] init];
         treatmentNineteen.name = @"Rest";
-        treatmentNineteen.injuryName = @"Toe and Forefoot Fractures";
+        treatmentNineteen.injuryName = @"Toe/Foot Fractures";
         treatmentNineteen.shortDescription = @"Stay off the injured foot. Walking may cause further injury.";
         treatmentNineteen.longDescription = @"Rest is the primary treatment for stress fractures in the foot. Stay away from the activity that triggered the injury, or any activity that causes pain at the fracture site, for three to four weeks. Substitute another activity that puts less pressure on the foot, such as swimming.";
         treatmentNineteen.picture = [UIImage imageNamed:@"restAnkle.jpg"];
@@ -176,7 +176,7 @@
         
         Treatment * treatmentTwenty = [[Treatment alloc] init];
         treatmentTwenty.name = @"Splinting";
-        treatmentTwenty.injuryName = @"Toe and Forefoot Fractures";
+        treatmentTwenty.injuryName = @"Toe/Foot Fractures";
         treatmentTwenty.shortDescription = @"The toe may be fitted with a splint to keep it in a fixed position.";
         treatmentTwenty.longDescription = @"The bone ends of a displaced fracture must be realigned and the bone kept immobile until healing takes place. If you have a broken toe, an option is to 'buddy-tape' the broken toe to an adjacent toe, with a gauze pad between the toes to absorb moisture. You should replace the gauze and tape as often as needed.";
         treatmentTwenty.picture = [UIImage imageNamed:@"splintToe.jpg"];
