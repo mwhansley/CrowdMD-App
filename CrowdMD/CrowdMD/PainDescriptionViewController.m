@@ -7,12 +7,19 @@
 //
 
 #import "PainDescriptionViewController.h"
+#import "InjurySuggestionsTableController.h"
 
 @interface PainDescriptionViewController ()
 
 @end
 
 @implementation PainDescriptionViewController
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    InjurySuggestionsTableController* destViewController = segue.destinationViewController;
+    destViewController.injuries = self.injuries;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -20,57 +20,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AXD-xc-cRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="438" y="-140"/>
-        </scene>
-        <!--Pain Descrption-->
-        <scene sceneID="Kp9-pA-Hav">
-            <objects>
-                <viewController title="Pain Descrption" id="zhJ-M2-vA2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NV7-Bm-ovi"/>
-                        <viewControllerLayoutGuide type="bottom" id="x6l-UJ-ibB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ihq-Hy-BFe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="97" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="One" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DA6-w7-hdh">
-                                <rect key="frame" x="112" y="240" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="97" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Two" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jc8-HZ-cvG">
-                                <rect key="frame" x="112" y="297" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="97" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Three" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQi-HU-nQg">
-                                <rect key="frame" x="112" y="349" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd0-AD-HHz">
-                                <rect key="frame" x="136" y="427" width="49" height="30"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="168" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-rH-Rx3">
-                                <rect key="frame" x="74" y="102" width="172" height="31"/>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Your Pain Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8f-Bs-khN">
-                                <rect key="frame" x="76" y="73" width="277" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u7c-m4-GEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="832" y="-483"/>
         </scene>
         <!--Search an Injury-->
         <scene sceneID="ur6-zh-OHs">
@@ -241,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGE-Lk-2Vj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="1047"/>
+            <point key="canvasLocation" x="521" y="1587"/>
         </scene>
         <!--Seg Control View Controller-->
         <scene sceneID="sNH-H8-x8m">
@@ -283,10 +232,61 @@
             </objects>
             <point key="canvasLocation" x="1670" y="-442"/>
         </scene>
+        <!--Injury Suggestions-->
+        <scene sceneID="w12-Kc-1hl">
+            <objects>
+                <tableViewController title="Possible Injuries" id="027-3c-NCp" userLabel="Injury Suggestions" customClass="InjurySuggestionsTableController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="KLE-0Y-dWb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="InjuryCell" rowHeight="100" id="ArK-LP-8L5" customClass="InjuryTableCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ArK-LP-8L5" id="0A5-De-7bu">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Injury Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cg7-7r-iGc">
+                                            <rect key="frame" x="8" y="4" width="176" height="21"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Injury Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7o-a5-6q0">
+                                            <rect key="frame" x="13" y="20" width="160" height="72"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="103" placeholderIntrinsicHeight="72" translatesAutoresizingMaskIntoConstraints="NO" id="Trr-bE-kkf">
+                                            <rect key="frame" x="184" y="14" width="103" height="72"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="K7o-a5-6q0" id="CWw-Gz-feX"/>
+                                    <outlet property="nameLabel" destination="Cg7-7r-iGc" id="Ds7-ez-YT2"/>
+                                    <outlet property="pictureView" destination="Trr-bE-kkf" id="mae-hv-D1c"/>
+                                    <segue destination="uni-su-qdA" kind="push" identifier="showInjuryDetail" id="n1d-Vz-sro"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="027-3c-NCp" id="Gsr-Ea-0hm"/>
+                            <outlet property="delegate" destination="027-3c-NCp" id="xp4-wJ-YY6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Tf2-rE-VvO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9C-mo-tYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589" y="343"/>
+        </scene>
         <!--Upper Body-->
         <scene sceneID="Bbd-SK-e2a">
             <objects>
-                <viewController title="Upper Body" id="mOm-dh-ixq" sceneMemberID="viewController">
+                <viewController title="Upper Body" id="mOm-dh-ixq" customClass="BodyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="arZ-3O-QYV"/>
                         <viewControllerLayoutGuide type="bottom" id="kDj-8b-vsf"/>
@@ -304,6 +304,9 @@
                                 <state key="normal" title="•">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bVM-Xc-8uw" kind="push" identifier="Elbow" id="J0q-SQ-hMK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkZ-l0-uB6">
                                 <rect key="frame" x="153" y="279" width="30" height="60"/>
@@ -346,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ckm-cf-hDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="451"/>
+            <point key="canvasLocation" x="1449" y="869"/>
         </scene>
         <!--Injury Details-->
         <scene sceneID="yXC-5M-kh2">
@@ -411,10 +414,10 @@
             </objects>
             <point key="canvasLocation" x="2495" y="-771"/>
         </scene>
-        <!--View Controller-->
+        <!--Pain Description View Controller-->
         <scene sceneID="MuA-5z-bzX">
             <objects>
-                <viewController id="bVM-Xc-8uw" sceneMemberID="viewController">
+                <viewController id="bVM-Xc-8uw" customClass="PainDescriptionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6vo-PB-HNe"/>
                         <viewControllerLayoutGuide type="bottom" id="kax-0N-979"/>
@@ -465,6 +468,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="027-3c-NCp" kind="push" id="ETb-FW-bq7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Js7-Cx-q8F">
                                 <rect key="frame" x="5" y="112" width="311" height="21"/>
@@ -475,11 +481,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="570-KG-KTG"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gG9-3H-uXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3318" y="-771"/>
+            <point key="canvasLocation" x="995" y="581"/>
         </scene>
         <!--Suggested Treatments-->
         <scene sceneID="0jd-ly-NMo">
@@ -967,7 +974,7 @@
         <!--Lower Body-->
         <scene sceneID="4R7-mT-kuO">
             <objects>
-                <viewController title="Lower Body" id="CiV-13-gXy" sceneMemberID="viewController">
+                <viewController title="Lower Body" id="CiV-13-gXy" customClass="BodyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Be-GY-HIt"/>
                         <viewControllerLayoutGuide type="bottom" id="QJX-MD-snZ"/>
@@ -992,6 +999,9 @@
                                 <state key="normal" title="•">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bVM-Xc-8uw" kind="push" identifier="Groin" id="UZk-xb-xT0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQy-Le-GYC">
                                 <rect key="frame" x="148" y="184" width="30" height="60"/>
@@ -1020,12 +1030,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A9M-IX-lvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="1183"/>
+            <point key="canvasLocation" x="1481" y="1412"/>
         </scene>
-        <!--View Controller-->
+        <!--Leg Scene-->
         <scene sceneID="yvw-In-eox">
             <objects>
-                <viewController id="YDv-eZ-LRt" sceneMemberID="viewController">
+                <viewController id="YDv-eZ-LRt" userLabel="Leg Scene" customClass="BodyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8M7-9f-gZi"/>
                         <viewControllerLayoutGuide type="bottom" id="jAC-Rd-PCm"/>
@@ -1038,11 +1048,14 @@
                                 <rect key="frame" x="11" y="84" width="320" height="398"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMU-JS-LJ3">
-                                <rect key="frame" x="123" y="84" width="30" height="60"/>
+                                <rect key="frame" x="129" y="84" width="30" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="•">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bVM-Xc-8uw" kind="push" identifier="Groin" id="3ok-hJ-qxp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQe-Cy-eRI">
                                 <rect key="frame" x="134" y="242" width="30" height="60"/>
@@ -1050,6 +1063,9 @@
                                 <state key="normal" title="•">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bVM-Xc-8uw" kind="push" identifier="Knee" id="pJZ-fJ-Spb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RR8-H4-D7k">
                                 <rect key="frame" x="139" y="400" width="30" height="60"/>
@@ -1057,6 +1073,9 @@
                                 <state key="normal" title="•">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bVM-Xc-8uw" kind="push" identifier="Foot" id="xXE-oc-iOf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tap an area to investigate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfC-c5-fZp">
                                 <rect key="frame" x="63" y="490" width="194" height="21"/>
@@ -1064,6 +1083,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14p-A4-nfu">
+                                <rect key="frame" x="134" y="152" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="•">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bVM-Xc-8uw" kind="push" identifier="Quad" id="ffA-30-1cZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI3-50-r5n">
+                                <rect key="frame" x="134" y="310" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="•">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bVM-Xc-8uw" kind="push" identifier="Shin" id="fgp-iQ-BBK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1073,10 +1112,10 @@
             </objects>
             <point key="canvasLocation" x="1087" y="1750"/>
         </scene>
-        <!--View Controller-->
+        <!--Body View Controller-->
         <scene sceneID="IPO-Xa-Odq">
             <objects>
-                <viewController id="YpK-69-OS9" sceneMemberID="viewController">
+                <viewController id="YpK-69-OS9" customClass="BodyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ebu-M2-QA9"/>
                         <viewControllerLayoutGuide type="bottom" id="uih-N4-I1f"/>
@@ -1101,6 +1140,9 @@
                                 <state key="normal" title="•">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bVM-Xc-8uw" kind="push" identifier="Elbow" id="Ybt-su-Nse"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DU-oc-150">
                                 <rect key="frame" x="230" y="100" width="30" height="60"/>
@@ -1122,7 +1164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHC-AX-NOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="559"/>
+            <point key="canvasLocation" x="362" y="823"/>
         </scene>
     </scenes>
     <resources>
@@ -1139,8 +1181,10 @@
         <image name="upper body" width="1095" height="1095"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5Ue-g0-ug9"/>
+        <segue reference="n1d-Vz-sro"/>
+        <segue reference="fgp-iQ-BBK"/>
         <segue reference="wbn-CZ-haH"/>
+        <segue reference="5Ue-g0-ug9"/>
         <segue reference="g7h-Rs-Ky2"/>
         <segue reference="r5x-v6-2pa"/>
     </inferredMetricsTieBreakers>

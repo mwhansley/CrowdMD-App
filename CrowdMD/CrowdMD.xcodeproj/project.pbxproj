@@ -31,7 +31,8 @@
 		72A973831A1C72C0004F61CC /* MyTreatmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A973821A1C72C0004F61CC /* MyTreatmentViewController.m */; };
 		72B9B4261A30565100B1D7A9 /* BodyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B4251A30565100B1D7A9 /* BodyViewController.m */; };
 		72B9B4291A30577F00B1D7A9 /* PainDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B4281A30577F00B1D7A9 /* PainDescriptionViewController.m */; };
-		72B9B42C1A3057AA00B1D7A9 /* InjurySuggestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B42B1A3057AA00B1D7A9 /* InjurySuggestionsViewController.m */; };
+		72B9B4321A30602E00B1D7A9 /* InjurySuggestionsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B4311A30602E00B1D7A9 /* InjurySuggestionsTableController.m */; };
+		72B9B4351A30650700B1D7A9 /* BodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B9B4341A30650700B1D7A9 /* BodyPart.m */; };
 		72FFC5C01A1D80D500657B36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5AC1A1D80D500657B36 /* InfoPlist.strings */; };
 		72FFC5C21A1D80D500657B36 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B01A1D80D500657B36 /* LICENSE */; };
 		72FFC5C41A1D80D500657B36 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 72FFC5B21A1D80D500657B36 /* README */; };
@@ -105,8 +106,10 @@
 		72B9B4251A30565100B1D7A9 /* BodyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyViewController.m; sourceTree = "<group>"; };
 		72B9B4271A30577F00B1D7A9 /* PainDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PainDescriptionViewController.h; sourceTree = "<group>"; };
 		72B9B4281A30577F00B1D7A9 /* PainDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PainDescriptionViewController.m; sourceTree = "<group>"; };
-		72B9B42A1A3057AA00B1D7A9 /* InjurySuggestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjurySuggestionsViewController.h; sourceTree = "<group>"; };
-		72B9B42B1A3057AA00B1D7A9 /* InjurySuggestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjurySuggestionsViewController.m; sourceTree = "<group>"; };
+		72B9B4301A30602E00B1D7A9 /* InjurySuggestionsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjurySuggestionsTableController.h; sourceTree = "<group>"; };
+		72B9B4311A30602E00B1D7A9 /* InjurySuggestionsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjurySuggestionsTableController.m; sourceTree = "<group>"; };
+		72B9B4331A30650700B1D7A9 /* BodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyPart.h; sourceTree = "<group>"; };
+		72B9B4341A30650700B1D7A9 /* BodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyPart.m; sourceTree = "<group>"; };
 		72FFC5AD1A1D80D500657B36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		72FFC5B01A1D80D500657B36 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		72FFC5B21A1D80D500657B36 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -267,12 +270,14 @@
 		72B9B4231A30560F00B1D7A9 /* Body */ = {
 			isa = PBXGroup;
 			children = (
+				72B9B4331A30650700B1D7A9 /* BodyPart.h */,
+				72B9B4341A30650700B1D7A9 /* BodyPart.m */,
 				72B9B4241A30565100B1D7A9 /* BodyViewController.h */,
 				72B9B4251A30565100B1D7A9 /* BodyViewController.m */,
 				72B9B4271A30577F00B1D7A9 /* PainDescriptionViewController.h */,
 				72B9B4281A30577F00B1D7A9 /* PainDescriptionViewController.m */,
-				72B9B42A1A3057AA00B1D7A9 /* InjurySuggestionsViewController.h */,
-				72B9B42B1A3057AA00B1D7A9 /* InjurySuggestionsViewController.m */,
+				72B9B4301A30602E00B1D7A9 /* InjurySuggestionsTableController.h */,
+				72B9B4311A30602E00B1D7A9 /* InjurySuggestionsTableController.m */,
 			);
 			name = Body;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 			files = (
 				724AAA311A24FA0000E50A5E /* TreatmentTableCell.m in Sources */,
 				72FFC5CC1A1D80D500657B36 /* TFAppDelegate.m in Sources */,
+				72B9B4351A30650700B1D7A9 /* BodyPart.m in Sources */,
 				725EF95C1A1A96D5004BC94D /* MyTreatment.m in Sources */,
 				72FFC5CD1A1D80D500657B36 /* TFViewController.m in Sources */,
 				722677461A2E6AB800F0EAA2 /* SegControlViewController.m in Sources */,
@@ -418,7 +424,6 @@
 				7229A6851A15CE4C0027E510 /* SecondViewController.m in Sources */,
 				725EF9531A1A8AEF004BC94D /* MyTreatmentTableCell.m in Sources */,
 				72FFC5CB1A1D80D500657B36 /* StarRatingControl.m in Sources */,
-				72B9B42C1A3057AA00B1D7A9 /* InjurySuggestionsViewController.m in Sources */,
 				724AAA341A24FD1700E50A5E /* TreatmentViewController.m in Sources */,
 				729502F01A1F3E40008A8A8B /* MyTreatmentInfoViewController.m in Sources */,
 				7DDBEBC41A1FAEFB00979265 /* UIStoryboardSegue+DismissSegue_m.m in Sources */,
@@ -434,6 +439,7 @@
 				7229A6AA1A15D78F0027E510 /* InjuryTableController.m in Sources */,
 				7229A67C1A15CE4C0027E510 /* main.m in Sources */,
 				72A973831A1C72C0004F61CC /* MyTreatmentViewController.m in Sources */,
+				72B9B4321A30602E00B1D7A9 /* InjurySuggestionsTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

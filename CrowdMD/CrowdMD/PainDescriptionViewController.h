@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PainDescriptionViewController : UIViewController
-
+@property NSMutableArray *injuries;
 @end
