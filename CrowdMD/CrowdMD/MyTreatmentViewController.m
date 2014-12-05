@@ -55,7 +55,7 @@
     
     UIImageView* starsView = (UIImageView *)[cell viewWithTag:4];
     
-    if(treatment.rating == -1) {
+    if(treatment.rating == -1 ) {
         starsView.image = [UIImage imageNamed:@"Stars_0.png"];
     } else if(treatment.rating == 1) {
         starsView.image = [UIImage imageNamed:@"Stars_1.jpg"];
@@ -86,7 +86,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+   // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

@@ -26,7 +26,42 @@
     [super viewDidLoad];
     self.injuryLabel.text = self.myTreatment.injury;
     self.treatmentLabel.text = self.myTreatment.treatment;
-    self.dateLabel.text = @"You said you would try this on";
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy"];
+    NSString *year = [formatter stringFromDate:self.myTreatment.date];
+    [formatter setDateFormat:@"MM"];
+    NSString *month = [formatter stringFromDate:self.myTreatment.date];
+    [formatter setDateFormat:@"dd"];
+    NSString *day = [formatter stringFromDate:self.myTreatment.date];
+    
+    if([month  isEqual: @"01"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"January %@, %@", day, year];
+    } else if ([month  isEqual: @"02"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"February %@, %@", day, year];
+    } else if ([month  isEqual: @"03"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"March %@, %@", day, year];
+    }else if ([month  isEqual: @"04"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"April %@, %@", day, year];
+    }else if ([month  isEqual: @"05"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"May%@, %@", day, year];
+    }else if ([month  isEqual: @"06"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"June %@, %@", day, year];
+    }else if ([month  isEqual: @"07"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"July %@, %@", day, year];
+    }else if ([month  isEqual: @"08"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"August %@, %@", day, year];
+    }else if ([month  isEqual: @"09"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"September %@, %@", day, year];
+    }else if ([month  isEqual: @"10"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"October %@, %@", day, year];
+    }else if ([month  isEqual: @"11"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"November %@, %@", day, year];
+    }else if ([month  isEqual: @"12"]) {
+        self.dateLabel.text = [NSString stringWithFormat:@"December %@, %@", day, year];
+    }
+        
+ 
     self.pictureView.contentMode = UIViewContentModeScaleAspectFit;
     [self.pictureView setImage:self.myTreatment.picture];
     _ratingLabels = [NSArray arrayWithObjects:@"Not Effective", @"Not-That Helpful", @"Kind-Of Helpful", @"Somewhat Effective", @"Very Effective", @"Extremely Effective", nil];

@@ -27,6 +27,7 @@
         new.picture = self.treatment.picture;
         new.longDescription = self.treatment.longDescription;
         new.rating = -1;
+        new.date = [NSDate date];
 
         [treatments addObject:new];
         
