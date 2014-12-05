@@ -112,7 +112,7 @@
         
         Treatment * treatmentTwelve = [[Treatment alloc] init];
         treatmentTwelve.name = @"Rest";
-        treatmentTwelve.injuryName = @"Tennis elbow";
+        treatmentTwelve.injuryName = @"Tennis Elbow";
         treatmentTwelve.shortDescription = @"Rest and avoid any activity that causes pain.";
         treatmentTwelve.longDescription = @"Stopping or changing activities that irritate the elbow are vital while pain is still present. Depending on how severe your condition is, you may need to rest your tendon for weeks to months.";
         treatmentTwelve.picture = [UIImage imageNamed:@"restElbow.jpg"];
@@ -120,7 +120,7 @@
         
         Treatment * treatmentThirteen = [[Treatment alloc] init];
         treatmentThirteen.name = @"Anti-Inflammatories";
-        treatmentThirteen.injuryName = @"Tennis elbow";
+        treatmentThirteen.injuryName = @"Tennis Elbow";
         treatmentThirteen.shortDescription = @"An anti-inflammatory will help reduce swelling and inflammation.";
         treatmentThirteen.longDescription = @"Take anti-inflammatory painkillers. Non-steroidal anti-inflammatory drugs (NSAIDs), like Advil, Aleve, or Motrin, will help with pain and swelling. However, studies show their effects are controversial especially if taken long term.  Additionally, these drugs can have side effects; they should be used only occasionally, unless your doctor specifically says otherwise";
         treatmentThirteen.picture = [UIImage imageNamed:@"antiInflammatory.jpg"];
@@ -128,7 +128,7 @@
         
         Treatment * treatmentFourteen = [[Treatment alloc] init];
         treatmentFourteen.name = @"Ice";
-        treatmentFourteen.injuryName = @"Tennis elbow";
+        treatmentFourteen.injuryName = @"Tennis Elbow";
         treatmentFourteen.shortDescription = @"Ice your elbow to reduce pain and swelling.";
         treatmentFourteen.longDescription = @"Ice your elbow to reduce pain and swelling. Apply an ice pack for 20-30 minutes every 3 to 4 hours for 2 to 3 days, or until the pain is gone. Wait atleast 40 minutes before icing again.";
         treatmentFourteen.picture = [UIImage imageNamed:@"iceElbow.jpg"];
