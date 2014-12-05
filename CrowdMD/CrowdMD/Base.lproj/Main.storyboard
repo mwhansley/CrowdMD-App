@@ -764,7 +764,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="dateLabel" destination="G9J-Aa-FOp" id="8C0-NG-Gz8"/>
+                        <outlet property="dateLabel" destination="khL-dE-g5x" id="w9h-2E-Vif"/>
                         <outlet property="injuryLabel" destination="PAY-n9-9wU" id="hha-t2-lfa"/>
                         <outlet property="ratingLabel" destination="qkq-y8-JCZ" id="Oug-B2-b83"/>
                         <outlet property="treatmentLabel" destination="QPg-jq-zqC" id="iO9-Yk-RgZ"/>
@@ -1170,10 +1170,10 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wbn-CZ-haH"/>
-        <segue reference="t9H-M8-QlR"/>
-        <segue reference="r5x-v6-2pa"/>
         <segue reference="5Ue-g0-ug9"/>
         <segue reference="UZk-xb-xT0"/>
         <segue reference="n1d-Vz-sro"/>
+        <segue reference="g7h-Rs-Ky2"/>
+        <segue reference="8VH-vu-wCA"/>
     </inferredMetricsTieBreakers>
 </document>

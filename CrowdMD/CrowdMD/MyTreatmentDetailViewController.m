@@ -26,7 +26,16 @@
     [super viewDidLoad];
     self.injuryLabel.text = self.myTreatment.injury;
     self.treatmentLabel.text = self.myTreatment.treatment;
-    self.dateLabel.text = @"You said you would try this on";
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy"];
+    NSString *year = [formatter stringFromDate:self.myTreatment.date];
+    [formatter setDateFormat:@"MM"];
+    NSString *month = [formatter stringFromDate:self.myTreatment.date];
+    [formatter setDateFormat:@"dd"];
+    NSString *day = [formatter stringFromDate:self.myTreatment.date];
+    
+    self.dateLabel.text = [NSString stringWithFormat:@"%@/%@/%@", month, day, year];
     self.pictureView.contentMode = UIViewContentModeScaleAspectFit;
     [self.pictureView setImage:self.myTreatment.picture];
     _ratingLabels = [NSArray arrayWithObjects:@"Not Effective", @"Not-That Helpful", @"Kind-Of Helpful", @"Somewhat Effective", @"Very Effective", @"Extremely Effective", nil];
