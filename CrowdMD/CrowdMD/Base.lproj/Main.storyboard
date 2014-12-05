@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -618,7 +618,7 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Smiling-Man-4" translatesAutoresizingMaskIntoConstraints="NO" id="PCS-bz-vwh">
-                                <rect key="frame" x="16" y="76" width="99" height="80"/>
+                                <rect key="frame" x="16" y="76" width="100" height="100"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sports:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgy-eH-0Ps">
                                 <rect key="frame" x="190" y="135" width="57" height="21"/>
@@ -1157,7 +1157,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Smiling-Man-4" width="1374" height="1131"/>
+        <image name="Smiling-Man-4" width="1080" height="1080"/>
         <image name="Stars_0.png" width="460" height="80"/>
         <image name="arm" width="732" height="1223"/>
         <image name="body-1" width="2597" height="3038"/>
@@ -1169,11 +1169,11 @@
         <image name="upper body" width="1095" height="1095"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wbn-CZ-haH"/>
         <segue reference="t9H-M8-QlR"/>
         <segue reference="r5x-v6-2pa"/>
+        <segue reference="wbn-CZ-haH"/>
         <segue reference="5Ue-g0-ug9"/>
-        <segue reference="UZk-xb-xT0"/>
+        <segue reference="J0q-SQ-hMK"/>
         <segue reference="n1d-Vz-sro"/>
     </inferredMetricsTieBreakers>
 </document>
