@@ -58,7 +58,7 @@
         treatmentFive.name = @"Anti-Inflammatories";
         treatmentFive.injuryName = @"Pulled Groin";
         treatmentFive.shortDescription = @"An anti-inflammatory will help reduce swelling and inflammation.";
-        treatmentFive.longDescription = @"Take anti-inflammatory painkillers. Non-steroidal anti-inflammatory drugs (NSAIDs), like Advil, Aleve, or Motrin, will help with pain and swelling. However, studies show their effects are controversial especially if taken long term.  Additionally, these drugs can have side effects; they should be used only occasionally, unless your doctor specifically says otherwise";
+        treatmentFive.longDescription = @"Take anti-inflammatory painkillers. Non-steroidal anti-inflammatory drugs (NSAIDs), like Advil, Aleve, or Motrin, will help with pain and swelling. However, studies show their effects are controversial especially if taken long term.  Additionally, these drugs can have side effects; they should be used only occasionally, unless your doctor specifically says otherwise.";
         treatmentFive.picture = [UIImage imageNamed:@"antiInflammatory.jpg"];
         treatmentFive.rating = 3;
         
@@ -82,7 +82,7 @@
         treatmentEight.name = @"Anti-Inflammatories";
         treatmentEight.injuryName = @"Shin Splints";
         treatmentEight.shortDescription = @"An anti-inflammatory will help reduce swelling and inflammation.";
-        treatmentEight.longDescription = @"Take anti-inflammatory painkillers. Non-steroidal anti-inflammatory drugs (NSAIDs), like Advil, Aleve, or Motrin, will help with pain and swelling. However, studies show their effects are controversial especially if taken long term.  Additionally, these drugs can have side effects; they should be used only occasionally, unless your doctor specifically says otherwise";
+        treatmentEight.longDescription = @"Take anti-inflammatory painkillers. Non-steroidal anti-inflammatory drugs (NSAIDs), like Advil, Aleve, or Motrin, will help with pain and swelling. However, studies show their effects are controversial especially if taken long term.  Additionally, these drugs can have side effects; they should be used only occasionally, unless your doctor specifically says otherwise.";
         treatmentEight.picture = [UIImage imageNamed:@"antiInflammatory.jpg"];
         treatmentEight.rating = 3;
         
@@ -122,7 +122,7 @@
         treatmentThirteen.name = @"Anti-Inflammatories";
         treatmentThirteen.injuryName = @"Tennis Elbow";
         treatmentThirteen.shortDescription = @"An anti-inflammatory will help reduce swelling and inflammation.";
-        treatmentThirteen.longDescription = @"Take anti-inflammatory painkillers. Non-steroidal anti-inflammatory drugs (NSAIDs), like Advil, Aleve, or Motrin, will help with pain and swelling. However, studies show their effects are controversial especially if taken long term.  Additionally, these drugs can have side effects; they should be used only occasionally, unless your doctor specifically says otherwise";
+        treatmentThirteen.longDescription = @"Take anti-inflammatory painkillers. Non-steroidal anti-inflammatory drugs (NSAIDs), like Advil, Aleve, or Motrin, will help with pain and swelling. However, studies show their effects are controversial especially if taken long term.  Additionally, these drugs can have side effects; they should be used only occasionally, unless your doctor specifically says otherwise.";
         treatmentThirteen.picture = [UIImage imageNamed:@"antiInflammatory.jpg"];
         treatmentThirteen.rating = 2;
         
