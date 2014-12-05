@@ -55,7 +55,7 @@
     
     UIImageView* starsView = (UIImageView *)[cell viewWithTag:4];
     
-    if(treatment.rating == -1) {
+    if(treatment.rating == -1 ) {
         starsView.image = [UIImage imageNamed:@"Stars_0.png"];
     } else if(treatment.rating == 1) {
         starsView.image = [UIImage imageNamed:@"Stars_1.jpg"];
